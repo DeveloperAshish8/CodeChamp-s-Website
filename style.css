@@ -24,9 +24,40 @@
   border-color: #fd7014;
 }
 
+.hamburger:hover {
+  border: none;
+  background-color: #fd711494;
+ transition: all 0.2s ease-in-out;
+}
+
 .active {
   color: #fd7014 !important;
 }
+
+.nav-link{
+  display: inline-block;
+  position: relative;
+}
+
+.nav-link:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fd7014;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-in-out;
+}
+
+.nav-link:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
 /**navbar styling ends**/
 
 /**first container area styling starts**/
@@ -84,8 +115,11 @@ hr {
   margin: auto;
 }
 
-.rec-button {
-  margin-left: 30px;
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .event {
