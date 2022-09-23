@@ -115,7 +115,7 @@ hr {
   margin: auto;
 }
 
-.card-body{
+.home-card{
   display: flex;
   flex-direction: column;
   justify-content: center;
