@@ -84,18 +84,29 @@
 }
 
 .common-button {
-  padding: 10px 20px !important;
-  border-radius: 30px !important;
-  background-color: #fd7014 !important;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #fd7014;
   color: white;
   border: none;
-  transition: all 0.3s linear !important;
+  transition: all 0.3s linear;
 }
 
 .common-button:hover {
   background-color: transparent !important;
   color: #fd7014 !important;
   box-shadow: 0 0.5px 1px rgb(92, 92, 92) !important;
+}
+
+.register{
+  animation-name: register;
+  animation-duration: 1s;
+  animation-iteration-count: 30;
+}
+
+@keyframes register {
+       0%{background-color: #fd7014;}
+       50%{background-color: transparent; color: #fd7014;}
 }
 
 .intro-image {
