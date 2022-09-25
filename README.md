@@ -16,7 +16,7 @@ This is an Open Source Community Website which contains Past events details, soc
 ## 📍Acknowledgements
 
  - [📌Visit our website](https://codechamp.tech/)
- - [📌Join CodeChamp](https://discord.com/invite/Pp5xg74nKH)
+ - [📌For any issue join our discord](https://discord.com/invite/Pp5xg74nKH)
 
 
 ## 📍Contributing
