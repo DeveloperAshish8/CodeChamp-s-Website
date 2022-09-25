@@ -6,7 +6,7 @@
 
 <h1 align="center"> CodeChamp-Website </h1>
 
-This is a Open Source Community Website which contains Past events details, social media handles, team details, It also have an internship page where various internships are listed. The website then contains a FAQs section and then ended up by footer containing Quick links for navigation.
+This is an Open Source Community Website which contains Past events details, social media handles, team details, It also have an internship page where various internships are listed. The website then contains a FAQs section and then ended up by footer containing Quick links for navigation.
 
 ## 📍Tech Stacks
 
