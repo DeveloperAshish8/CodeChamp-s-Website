@@ -98,16 +98,16 @@
   box-shadow: 0 0.5px 1px rgb(92, 92, 92) !important;
 }
 
-.register{
+/**.register{
   animation-name: register;
   animation-duration: 1s;
   animation-iteration-count: 30;
-}
+} 
 
 @keyframes register {
        0%{background-color: #fd7014;}
        50%{background-color: transparent; color: #fd7014;}
-}
+}**/
 
 .intro-image {
   max-width: 100%;
