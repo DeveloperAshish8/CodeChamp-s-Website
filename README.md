@@ -2,22 +2,18 @@
   <img src="./images/logo.png" alt="Sublime's custom image" width="200px"/>
 </p>
 
-
-
 <h1 align="center"> CodeChamp-Website </h1>
 
-This is an Open Source Community Website which contains Past events details, social media handles, team details, It also have an internship page where various internships are listed. The website then contains a FAQs section and then ended up by footer containing Quick links for navigation.
+This is an Open Source Community Website which contain details on past events, social media handles, team details, and an internship page where various internships are listed. The website also has a section dedicated for frequently asked questions and a footer which contains quick links for navigation.
 
 ## 📍Tech Stacks
 
-<img src="./images/Html image.png" alt="Sublime's custom image" width="100px" height="120px"/>  <img src="./images/Css image.png" alt="Sublime's custom image" width="100px" height="120px"/>  <img src="./images/bootstrap.png" alt="Sublime's custom image" width="100px" height="120px"/>  <img src="./images/javascript.png" alt="Sublime's custom image" width="100px" height="120px"/>
-
+<img src="./images/Html image.png" alt="Sublime's custom image" width="100px" height="120px"/> <img src="./images/Css image.png" alt="Sublime's custom image" width="100px" height="120px"/> <img src="./images/bootstrap.png" alt="Sublime's custom image" width="100px" height="120px"/> <img src="./images/javascript.png" alt="Sublime's custom image" width="100px" height="120px"/>
 
 ## 📍Acknowledgements
 
- - [📌Visit our website](https://codechamp.tech/)
- - [📌For any issue join our discord](https://discord.com/invite/Pp5xg74nKH)
-
+- [📌Visit our website](https://codechamp.tech/)
+- [📌For any issue join our discord](https://discord.com/invite/Pp5xg74nKH)
 
 ## 📍Contributing
 
@@ -49,8 +45,3 @@ Please visit Admins Git-hub profile for contact details.
 </a>
 
 <h3 align=center>Happy Coding 👨‍💻 </h3>
-
-
-
-
-
