@@ -343,3 +343,11 @@ footer {
     max-width: 80%;
   }
 }
+/* preloader styles */
+#preloader{
+  background: white url(images/loader.gif) no-repeat center center;
+  background-size: auto;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+}
