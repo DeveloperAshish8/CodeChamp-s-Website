@@ -19,8 +19,6 @@ This is an Open Source Community Website which contain details on past events, s
 
 Contributions are always welcome😃 !
 
-If you are interested in reporting/fixing issues and contributing directly to the code base, please see [CONTRIBUTING.md](./CONTRIBUTING.md) for more information on what we're looking for and how to get started.
-
 ## 📍Screenshots
 
 <img src="./images/Home page.png" alt="Sublime's custom image" />
