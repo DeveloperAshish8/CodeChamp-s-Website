@@ -115,6 +115,7 @@
   vertical-align: middle;
   justify-content: right;
 }
+
 /**first container area styling ends**/
 
 hr {
@@ -333,13 +334,26 @@ footer {
 
 /* dark mode styling ends here */
 
+.WhyToJoin{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 601px) and (max-width: 604px){
+  .WeOffers ul {
+    font-size: 15px;
+  }
+}
+
 @media screen and (max-width: 600px) {
-  .WhyToJoin {
-    flex-wrap: nowrap;
-    justify-content: flex-start !important;
+  .WhyToJoin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
-  .WhyToJoin > .image > .intro-image {
+  .WhyToJoin > .image {
     display: none;
   }
 
@@ -363,3 +377,4 @@ footer {
     max-width: 80%;
   }
 }
+
