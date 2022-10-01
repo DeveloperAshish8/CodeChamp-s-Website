@@ -72,7 +72,7 @@
                     <li class="nav-item">
                         <a class="nav-link dark-anchor" href="#tenth">Contact Us</a>
                     </li>
-                    <div class="form-check form-switch d-flex align-items-center mx-2">
+                    <div class="form-check form-switch d-flex align-items-center mx-3">
                         <input class="form-check-input" onclick="darkModeToggler()" type="checkbox" role="switch"
                             id="flexSwitchCheckDefault" />
                     </div>
@@ -346,28 +346,6 @@
     <!--members info ends-->
 
     </br>
-<<<<<<< HEAD
-    <!--what we offer starts-->
-    <div class="WeOffers" id="fifth">
-        <h1 class="heading text-center">
-            Why to Join Us?
-        </h1>
-        <hr />
-        <br>
-        <div class="container WhyToJoin">
-            <ul class="content mobile-view">
-                <li>Interaction with Students around the globe.</li>
-                <li>Mentors support and guide.</li>
-                <li>Webinars and workshops by Experts.</li>
-                <li>Keeps to updated about latest opportunities.</li>
-                <li>Hackathons and Intership Opportunities.</li>
-                <li>Complete learning Environment.</li>
-            </ul>
-
-            <div class="image">
-                <img class="intro-image" src="./images/what we offer image.jpg" alt="What we Offer Image">
-            </div>
-=======
         <!--what we offer starts-->
         <div class="WeOffers" id="fifth">
             <h1 class="heading text-center">
@@ -376,7 +354,7 @@
             <hr/>
             <br>
             <div class="WhyToJoin">
-                <ul class="content mobile-view">
+                <ul class="content mobile-view" id="Content">
                     <li>Interaction with Students around the globe.</li>
                     <li>Mentors support and guide.</li>
                     <li>Webinars and workshops by Experts.</li>
@@ -384,17 +362,11 @@
                     <li>Hackathons and Intership Opportunities.</li>
                     <li>Complete learning Environment.</li>
                 </ul>
-                
                 <div class="image">
                     <img src="./images/what we offer image.jpg" alt="What we Offer Image">
                 </div>
             </div>
-
-            
->>>>>>> 350de3f8310faed534ab38996fcd67129ca15977
         </div>
-
-
     </div>
     <!--what we offer ends-->
     <br />
@@ -650,6 +622,7 @@
         if(mode==='light'){
             mode='dark';
             document.getElementById('Navbar').classList.toggle('dark-nav');
+            document.getElementById('Content').style.color='white';
             document.getElementById('Navbar').classList.remove('bg-white');
             var elementAnchor = document.getElementsByClassName('dark-anchor');
             for (var i = 0; i < elementAnchor.length; i++) {
@@ -668,6 +641,7 @@
         else {
             mode='light';
             document.getElementById('Navbar').classList.toggle('dark-nav');
+            document.getElementById('Content').style.color='#696969';
             document.getElementById('Navbar').classList.add('bg-white');
             var elementAnchor = document.getElementsByClassName('dark-anchor');
             for (var i = 0; i < elementAnchor.length; i++) {
