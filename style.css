@@ -312,6 +312,26 @@ footer {
   color: #fd7014;
   text-decoration: none;
 }
+/* dark mode styling starts here */
+.dark-mode{
+  background-color: black;
+  color: white;
+}
+.dark-nav{
+  background-color: black;
+}
+.dark-anchor-tag{
+  color: white;
+}
+.dark-card{
+  background-color: #121212;
+}
+.dark-card-2{
+  background-color: black;
+}
+
+
+/* dark mode styling ends here */
 
 @media screen and (max-width: 600px) {
   .WhyToJoin {
