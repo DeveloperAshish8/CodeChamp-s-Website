@@ -1,6 +1,6 @@
 ## Visual Reference
 
-![Pre-loader Reference]([https://github.com/itsdurgeshray/CodeChamp-s-Website/blob/main/ux_design_guidlines/pre-loader.gif?raw=true])
+![Pre-loader Reference](ux_designer\pre-loader.gif)
 
 ## CSS Guideline
 
