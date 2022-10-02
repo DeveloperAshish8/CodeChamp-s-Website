@@ -427,6 +427,11 @@ footer {
   padding:5px;
 }
 
+.social h4{
+  font-family: "Oswald", sans-serif;
+  text-align: center!important;
+}
+
 .fa:hover {
   opacity: 0.9;
   color:#fd7014;
