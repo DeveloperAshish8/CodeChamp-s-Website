@@ -281,11 +281,17 @@ footer {
 }
 
 .about {
+  margin-right: 20%;
+  text-align: left;
   max-width: 30%;
 }
 
-.quick-links > li,
-.contact-details > li {
+.col {
+  margin: 0 10px;
+}
+
+.quick-links li {
+  
   list-style-type: none;
   font-family: "Fira Sans", sans-serif;
   line-height: 30px;
@@ -295,17 +301,34 @@ footer {
   color: #b3b3b3;
 }
 
-.quick-links > li > a {
+.quick-links a {
+  text-align: left;
   text-decoration: none;
   color: #b3b3b3;
+  margin-right: 5rem;
 }
 
-.quick-links > li > a:hover {
+.quick-links li > a:hover {
+  color: #fd7014;
+}
+
+.footer-socials {
+  margin: 2rem 0 0;
+  text-align: center;
+}
+
+.footer-socials i {
+  color: #b3b3b3;
+  width: 200px;
+  margin: 0rem 0.5rem 0rem;
+}
+
+.footer-socials i:hover {
   color: #fd7014;
 }
 
 .copyright-content {
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
 }
 
