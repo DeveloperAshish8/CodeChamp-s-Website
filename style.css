@@ -370,6 +370,9 @@ footer {
 .dark-anchor-tag{
   color: white;
 }
+.dark-anchor-tag:hover{
+  color: white;
+}
 .dark-card{
   background-color: #121212;
 }
