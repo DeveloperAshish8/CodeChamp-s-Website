@@ -265,7 +265,7 @@ form {
 }
 
 footer {
-  background-color: black;
+  background-image: linear-gradient(rgb(99, 16, 16),black);
   bottom: 0;
 }
 
@@ -422,3 +422,70 @@ footer {
   }
 }
 
+.social{
+  margin-top: 50px;
+  padding:5px;
+}
+
+.fa:hover {
+  opacity: 0.9;
+  color:#fd7014;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+.fa-linkedin:hover{
+  color:#fd7014;
+}
+
+.fa-discord {
+  color: white;
+}
+
+.fa-discord:hover{
+  color: #fd7014;
+}
+
+.fa-youtube {
+  color: white;
+}
+
+.fa-youtube:hover{
+  color:#fd7014;
+}
+.fa-telegram {
+  color: white;
+}
+
+.fa-telegram:hover{
+  color:#fd7014;
+}
+
+.fa-github {
+  color: white;
+}
+
+.fa-github:hover{
+  color:#fd7014;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.fa-instagram:hover{
+  color:#fd7014;
+}
+.fa {
+    padding: 20px;
+    font-size: 15px;
+    width: 20px;
+    text-decoration: none;
+    margin: 5px 20px;
+}
+
+.soc1{
+  padding:5px;
+}
