@@ -53,70 +53,55 @@
 
   <body>
     <!--navbar starts-->
-    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+    <nav class="navbar navbar-expand-lg sticky-top bg-white" id="Navbar">
       <div class="container-fluid">
-        <a class="navbar-brand ml-0 logo" href="./index.html"
-          ><img
-            src="./images/logo.png"
-            style="
-              height: 40px;
-              width: 80px;
-              filter: brightness(120%);
-            "
-        /></a>
-        <!--hamburger button for mobile view starts-->
-        <button
-          class="navbar-toggler hamburger"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--hamburger button for mobile view ends-->
-        <div
-          class="collapse navbar-collapse"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-ul">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                aria-current="page"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Opportunities</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" style="color: #fd7014" href="#"
-                >Interships / Jobs</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Feedbacks</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Contact Us</a>
-            </li>
-          </ul>
-        </div>
+          <a class="navbar-brand ml-0 logo" href="#"><img src="./images/logo.png"
+                  style="height: 40px; width:80px; filter:brightness(120%)"></a>
+          <!--hamburger button for mobile view starts-->
+          <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--hamburger button for mobile view ends-->
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-ul">
+                  <li class="nav-item">
+                      <a class="nav-link dark-anchor" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link dark-anchor" href="./index.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link dark-anchor" href="./index.html">Events</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link dark-anchor" href="./index.html">Team</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link dark-anchor" href="./index.html">Opportunities</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link dark-anchor" href="#" style="color:#fd7014;">Interships / Jobs</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link dark-anchor" href="./index.html">Feedbacks</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link dark-anchor" href="./index.html">Contact Us</a>
+                  </li>
+                  <div class="form-check form-switch d-flex align-items-center mx-2">
+                      <input type="checkbox" class="checkbox" id="checkbox" onclick="darkModeToggler()">
+                      <label for="checkbox" class="label" id="toggle-switch">
+                          <i class="bi bi-sun fs-6" style="font-size: 0.6rem !important;"></i>
+                          <i class="bi bi-moon fs-6" style="font-size: 0.6rem !important;"></i>
+                          <div class='ball'>
+                      </label>
+                  </div>
+              </ul>
+          </div>
       </div>
-    </nav>
+  </nav>
     <!--navbar ends-->
 
     <div class="container internships-cards">
@@ -946,4 +931,5 @@
       crossorigin="anonymous"
     ></script>
   </body>
+  
 </html>
