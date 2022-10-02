@@ -313,6 +313,52 @@ footer {
   color: #fd7014;
   text-decoration: none;
 }
+/* Toggle Switch styling starts here */
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 44px;
+  height: 20px;
+  background-color:white;
+  border: 0.8px solid #4C4C4C;
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border: 1px solid #4C4C4C;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.bi-moon {
+  color: black;
+}
+
+.bi-sun {
+  color: white;
+}
+/* Toggle Switch styling ends here */
+
 /* dark mode styling starts here */
 .dark-mode{
   background-color: black;
@@ -330,8 +376,6 @@ footer {
 .dark-card-2{
   background-color: black;
 }
-
-
 /* dark mode styling ends here */
 
 .WhyToJoin{

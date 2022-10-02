@@ -72,9 +72,13 @@
                     <li class="nav-item">
                         <a class="nav-link dark-anchor" href="#tenth">Contact Us</a>
                     </li>
-                    <div class="form-check form-switch d-flex align-items-center mx-3">
-                        <input class="form-check-input" onclick="darkModeToggler()" type="checkbox" role="switch"
-                            id="flexSwitchCheckDefault" />
+                    <div class="form-check form-switch d-flex align-items-center mx-2">
+                        <input type="checkbox" class="checkbox" id="checkbox" onclick="darkModeToggler()">
+                        <label for="checkbox" class="label" id="toggle-switch">
+                            <i class="bi bi-sun fs-6" style="font-size: 0.6rem !important;"></i>
+                            <i class="bi bi-moon fs-6" style="font-size: 0.6rem !important;"></i>
+                            <div class='ball'>
+                        </label>
                     </div>
                 </ul>
             </div>
@@ -346,27 +350,27 @@
     <!--members info ends-->
 
     </br>
-        <!--what we offer starts-->
-        <div class="WeOffers" id="fifth">
-            <h1 class="heading text-center">
-                Why to Join Us?
-            </h1>
-            <hr/>
-            <br>
-            <div class="WhyToJoin">
-                <ul class="content mobile-view" id="Content">
-                    <li>Interaction with Students around the globe.</li>
-                    <li>Mentors support and guide.</li>
-                    <li>Webinars and workshops by Experts.</li>
-                    <li>Keeps to updated about latest opportunities.</li>
-                    <li>Hackathons and Intership Opportunities.</li>
-                    <li>Complete learning Environment.</li>
-                </ul>
-                <div class="image">
-                    <img src="./images/what we offer image.jpg" alt="What we Offer Image">
-                </div>
+    <!--what we offer starts-->
+    <div class="WeOffers" id="fifth">
+        <h1 class="heading text-center">
+            Why to Join Us?
+        </h1>
+        <hr />
+        <br>
+        <div class="WhyToJoin">
+            <ul class="content mobile-view" id="Content">
+                <li>Interaction with Students around the globe.</li>
+                <li>Mentors support and guide.</li>
+                <li>Webinars and workshops by Experts.</li>
+                <li>Keeps to updated about latest opportunities.</li>
+                <li>Hackathons and Intership Opportunities.</li>
+                <li>Complete learning Environment.</li>
+            </ul>
+            <div class="image">
+                <img src="./images/what we offer image.jpg" alt="What we Offer Image">
             </div>
         </div>
+    </div>
     </div>
     <!--what we offer ends-->
     <br />
@@ -617,12 +621,14 @@
 
 </body>
 <script>
-    let mode= 'light';
+    let mode = 'light';
     function darkModeToggler() {
-        if(mode==='light'){
-            mode='dark';
+        if (mode === 'light') {
+            mode = 'dark';
             document.getElementById('Navbar').classList.toggle('dark-nav');
-            document.getElementById('Content').style.color='white';
+            document.getElementById('Content').style.color = 'white';
+            document.getElementById('toggle-switch').style.backgroundColor = 'black';
+            document.getElementById('toggle-switch').style.borderColor = 'white';
             document.getElementById('Navbar').classList.remove('bg-white');
             var elementAnchor = document.getElementsByClassName('dark-anchor');
             for (var i = 0; i < elementAnchor.length; i++) {
@@ -636,12 +642,14 @@
             for (var i = 0; i < elementCard2.length; i++) {
                 elementCard2[i].classList.toggle('dark-card-2');
             }
-            
+
         }
         else {
-            mode='light';
+            mode = 'light';
             document.getElementById('Navbar').classList.toggle('dark-nav');
-            document.getElementById('Content').style.color='#696969';
+            document.getElementById('Content').style.color = '#696969';
+            document.getElementById('toggle-switch').style.backgroundColor = 'white';
+            document.getElementById('toggle-switch').style.borderColor = 'black';
             document.getElementById('Navbar').classList.add('bg-white');
             var elementAnchor = document.getElementsByClassName('dark-anchor');
             for (var i = 0; i < elementAnchor.length; i++) {
