@@ -1,6 +1,9 @@
 ## Visual Reference
 
-![Pre-loader Reference](ux_designer\pre-loader.gif)
+![Pre-loader Reference](https://i.imgur.com/x4yZL20.png)
+![Pre-loader Reference](https://i.imgur.com/Ag4WYAw.png)
+![Pre-loader Reference](https://i.imgur.com/EyKM0UF.png)
+
 
 ## CSS Guideline
 
