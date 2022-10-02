@@ -304,6 +304,21 @@ footer {
   color: #fd7014;
 }
 
+.footer-socials {
+  margin: 2rem 0 0;
+  text-align: center;
+}
+
+.footer-socials i {
+  color: #b3b3b3;
+  width: 200px;
+  margin: 0rem 0.5rem 0rem;
+}
+
+.footer-socials i:hover {
+  color: #fd7014;
+}
+
 .copyright-content {
   margin-top: 50px;
   text-align: center;
