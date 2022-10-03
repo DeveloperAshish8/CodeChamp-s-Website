@@ -22,8 +22,11 @@
 <script>
     window.dataLayer = window.dataLayer || [];
 
+
     function gtag() {
+
         dataLayer.push(arguments);
+
     }
     gtag('js', new Date());
     gtag('config', 'G-3EL4753RH2');
@@ -37,14 +40,16 @@
     <!--navbar starts-->
     <nav class="navbar navbar-expand-lg sticky-top bg-white" id="Navbar">
         <div class="container-fluid">
-            <a class="navbar-brand ml-0 logo" href="#"><img src="./images/logo.png" style="height: 40px; width:80px; filter:brightness(120%)"></a>
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" style="height: 60px; margin-left: 1rem;">
+            </a>
             <!--hamburger button for mobile view starts-->
             <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--hamburger button for mobile view ends-->
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-ul">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-basis:none;">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link dark-anchor" aria-current="page" href="#">Home</a>
                     </li>
@@ -69,7 +74,7 @@
                     <li class="nav-item">
                         <a class="nav-link dark-anchor" href="#tenth">Contact Us</a>
                     </li>
-                    <div class="form-check form-switch d-flex align-items-center mx-2">
+                    <div class="form-check form-switch d-flex align-items-center">
                         <input type="checkbox" class="checkbox" id="checkbox" onclick="darkModeToggler()">
                         <label for="checkbox" class="label" id="toggle-switch">
                             <i class="bi bi-sun fs-6" style="font-size: 0.6rem !important;"></i>
@@ -553,8 +558,12 @@
         </div>
         <br />
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="https://web.jscdn.repl.co/AOS/aos.js"></script>
+    <<<<<<< HEAD <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+        =======
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        >>>>>>> 7d641d8 (Modified the Navbar Section)
+        <script src="https://web.jscdn.repl.co/AOS/aos.js"></script>
 
 </body>
 <script>
