@@ -65,6 +65,7 @@ body{
 }
 .dark-card{
   background-color: #121212;
+  border-radius: 20px;
 }
 /* dark mode styling ends here */
 .back-button {
