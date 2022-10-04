@@ -606,54 +606,31 @@ footer {
     text-align: center;
 
     color: #505050;
-
-    animation-timing-function: linear;
 }
 .preloader_text1::before{
   content: "CODE";
   color: #fc7014;
   margin-right: 10px;
   animation-name: appear;
-  animation-duration: 6000ms;
+  animation-duration: 2000ms;
   animation-delay: 300ms;
-  animation-timing-function:linear;
+  animation-timing-function:ease-in-out;
   animation-iteration-count: infinite;
 }
-@media (max-width: 788px) {
-  .preloader_text{
-    font-size: 50px;
-  }
-}
-@media (max-width: 526px) {
-  .preloader_text{
-    font-size: 30px;
-  }
-}
 @keyframes appear {
-  0%{
-    opacity: 0.5;
-  }
-  16% {
-    opacity: 1;
+  0% {
     content: "CODE";
-    animation-timing-function: ease;
-  }
-  35%{
-    opacity: 0;
-  }
-  55% {
-    opacity: 1;
-    animation-timing-function: ease;
+}
+
+33% {
+    content: "GROW";
+}
+
+66% {
     content: "LEARN";
 }
-71%{
-  opacity: 0;
-}
-100% {
-  opacity: 1;
-  animation-timing-function: ease;
-  content: "GROW";
+100%{
+  content: "CODE";
 }
 }
 /* Preloader styles end here */
-
