@@ -612,10 +612,20 @@ footer {
   color: #fc7014;
   margin-right: 10px;
   animation-name: appear;
-  animation-duration: 2000ms;
+  animation-duration: 4000ms;
   animation-delay: 300ms;
   animation-timing-function:ease-in-out;
   animation-iteration-count: infinite;
+}
+@media (max-width: 788px) {
+  .preloader_text{
+    font-size: 50px;
+  }
+}
+@media (max-width: 526px) {
+  .preloader_text{
+    font-size: 30px;
+  }
 }
 @keyframes appear {
   0% {
@@ -623,11 +633,11 @@ footer {
 }
 
 33% {
-    content: "GROW";
+    content: "LEARN";
 }
 
 66% {
-    content: "LEARN";
+    content: "GROW";
 }
 100%{
   content: "CODE";
