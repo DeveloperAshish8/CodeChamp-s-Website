@@ -1,13 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans:wght@500&family=Oswald:wght@500&family=Roboto+Condensed:ital@1&family=Roboto:wght@300;400;700&display=swap');
 
 body{
-  background-image: url(./images/Internship\ bg.jpg);
+  /* background-image: url(./images/Internship\ bg.jpg); */
+  background-color: aliceblue;
 }
 /* Toggle Switch styling starts here */
 .checkbox {
   opacity: 0;
   position: absolute;
 }
+
+#toTopBtn {
+  position: fixed;
+ bottom: 26px;
+ right: 39px;
+ z-index: 98;
+ padding: 21px;
+ background-color: #273f64;
+ border-radius: 25%;
+}
+
+.js .cd-top--fade-out {
+ opacity: .5;
+}
+
+.js .cd-top--is-visible {
+ visibility: visible;
+ opacity: 1;
+}
+
+.js .cd-top {
+ visibility: hidden;
+ opacity: 0;
+ transition: opacity .3s,visibility .3s,background-color .3s;
+}
+
+.cd-top {
+ position: fixed;
+ bottom: 20px;
+ bottom: var(--cd-back-to-top-margin);
+ right: 20px;
+ right: var(--cd-back-to-top-margin);
+ display: inline-block;
+ height: 40px;
+ height: var(--cd-back-to-top-size);
+ width: 40px;
+ width: var(--cd-back-to-top-size);
+ box-shadow: 0 0 10px rgba(0,0,0,.05) !important;
+ background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+ background-color: hsla(5,76%,62%,.8);
+ background-color: hsla(var(--cd-color-3-h),var(--cd-color-3-s),var(--cd-color-3-l),0.8);
+}
+
 
 .label {
   width: 44px;
@@ -66,6 +110,10 @@ body{
 .dark-card{
   background-color: #121212;
   border-radius: 20px;
+  /* color: white; */
+}
+.dark-name{
+  color: white;
 }
 /* dark mode styling ends here */
 .back-button {
@@ -77,6 +125,7 @@ body{
 .internships-card {
   margin-top: 5vh;
   border-color: #121212;
+  border-width: 2px;
 }
 
 .company-name {
@@ -85,7 +134,7 @@ body{
 
 .common-button {
   margin-top: 5px;
-  margin-left: 18vw;
+  margin-left: 9vw;
 }
 
 .internships-cards h3 {
