@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans:wght@500&family=Oswald:wght@500&family=Roboto+Condensed:ital@1&family=Roboto:wght@300;400;700&display=swap');
 
 body{
-  background-image: url(./images/Internship\ bg.jpg);
+  /* background-image: url(./images/Internship\ bg.jpg); */
+  background-color: aliceblue;
 }
 /* Toggle Switch styling starts here */
 .checkbox {
@@ -109,6 +110,10 @@ body{
 .dark-card{
   background-color: #121212;
   border-radius: 20px;
+  /* color: white; */
+}
+.dark-name{
+  color: white;
 }
 /* dark mode styling ends here */
 .back-button {
@@ -120,6 +125,7 @@ body{
 .internships-card {
   margin-top: 5vh;
   border-color: #121212;
+  border-width: 2px;
 }
 
 .company-name {
@@ -128,7 +134,7 @@ body{
 
 .common-button {
   margin-top: 5px;
-  margin-left: 18vw;
+  margin-left: 9vw;
 }
 
 .internships-cards h3 {
