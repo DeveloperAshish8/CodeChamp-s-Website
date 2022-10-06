@@ -716,7 +716,7 @@
     navLinks.forEach((l) => {
         l.addEventListener('click', () => {
             bsCollapse.toggle();
-            if(window.innerWidth < 992 && (window.innerHeight + window.pageYOffset) < document.body.offsetHeight) {
+            if(window.innerWidth < 992) {
                 about.style.scrollMarginTop = "420px";
                 events.style.scrollMarginTop = "420px";
                 team.style.scrollMarginTop = "420px";
