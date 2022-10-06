@@ -601,11 +601,11 @@
                 <h4 class="heading">Quick Navigate</h4>
                 <br />
                 <li><a href="#" class="text"> Home </a></li>
-                <li><a href="#fifth" class="text"> About </a></li>
-                <li><a href="#second" class="text"> Events </a></li>
-                <li><a href="#fourth" class="text"> Team </a></li>
-                <li><a href="#sixth" class="text"> Opportunities </a></li>
-                <li><a href="#feedback" class="text"> Feedbacks </a></li>
+                <li><a href="#fifth" onclick=resetScrollMarginTop() class="text"> About </a></li>
+                <li><a href="#second" onclick=resetScrollMarginTop() class="text"> Events </a></li>
+                <li><a href="#fourth" onclick=resetScrollMarginTop() class="text"> Team </a></li>
+                <li><a href="#sixth" onclick=resetScrollMarginTop() class="text"> Opportunities </a></li>
+                <li><a href="#feedback" onclick=resetScrollMarginTop() class="text"> Feedbacks </a></li>
             </div>
 
             <div class="contact-details footer-content" style="margin-top: 20px;">
@@ -706,6 +706,39 @@
         }
         var element = document.body;
         element.classList.toggle("dark-mode");
+    }
+
+    const navLinks = document.querySelectorAll('.nav-item')
+    const menuToggle = document.getElementById('navbarSupportedContent')
+    const about = document.getElementById('fifth');
+    const events = document.getElementById('second');
+    const team = document.getElementById('fourth');
+    const opportunities = document.getElementById('sixth');
+    const feedback = document.getElementById('feedback');
+    const contact = document.getElementById('tenth');
+    const bsCollapse = new bootstrap.Collapse(menuToggle, {
+        toggle : false
+    })
+    navLinks.forEach((l) => {
+        l.addEventListener('click', () => {
+            bsCollapse.toggle();
+            if(window.innerWidth < 992) {
+                about.style.scrollMarginTop = "420px";
+                events.style.scrollMarginTop = "420px";
+                team.style.scrollMarginTop = "420px";
+                opportunities.style.scrollMarginTop = "420px";
+                feedback.style.scrollMarginTop = "420px";
+                contact.style.scrollMarginTop = "420px";
+            }
+        })
+    })
+    function resetScrollMarginTop() {
+        about.style.scrollMarginTop = "0";
+        events.style.scrollMarginTop = "0";
+        team.style.scrollMarginTop = "0";
+        opportunities.style.scrollMarginTop = "0";
+        feedback.style.scrollMarginTop = "0";
+        contact.style.scrollMarginTop = "0";
     }
 </script>
 <script>
