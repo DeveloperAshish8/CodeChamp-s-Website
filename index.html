@@ -34,6 +34,12 @@
 
 
 <body>
+    <!--preloader starts-->
+     <div id="preloader">
+        <p class="preloader_text preloader_text1"></p>
+        <p class="preloader_text preloader_text2">TOGETHER</p>
+    </div>
+    <!--preloader ends-->
     <!--navbar starts-->
     <nav class="navbar navbar-expand-lg sticky-top bg-white" id="Navbar">
         <div class="container-fluid">
@@ -570,7 +576,9 @@
                     <input type="text" class="form-control" placeholder="Subject" required>
                     <textarea class="form-control" name="message" placeholder="Write Your message here"
                         style="margin-top: 20px;"></textarea>
-                    <input class="common-button" type="submit" style="margin-top: 20px; margin-left: 20%;">
+                        <div style="text-align:center;" >
+                        <input class="common-button" type="submit" style="margin-top: 20px;">
+                        </div>
                 </form>
             </div>
             <img class="intro-image contact-us-image" src="./images/contact us.png" alt="contact us image">
@@ -595,11 +603,11 @@
                 <h4 class="heading">Quick Navigate</h4>
                 <br />
                 <li><a href="#" class="text"> Home </a></li>
-                <li><a href="#fifth" class="text"> About </a></li>
-                <li><a href="#second" class="text"> Events </a></li>
-                <li><a href="#fourth" class="text"> Team </a></li>
-                <li><a href="#sixth" class="text"> Opportunities </a></li>
-                <li><a href="#feedback" class="text"> Feedbacks </a></li>
+                <li><a href="#fifth" onclick=resetScrollMarginTop() class="text"> About </a></li>
+                <li><a href="#second" onclick=resetScrollMarginTop() class="text"> Events </a></li>
+                <li><a href="#fourth" onclick=resetScrollMarginTop() class="text"> Team </a></li>
+                <li><a href="#sixth" onclick=resetScrollMarginTop() class="text"> Opportunities </a></li>
+                <li><a href="#feedback" onclick=resetScrollMarginTop() class="text"> Feedbacks </a></li>
             </div>
 
             <div class="contact-details footer-content" style="margin-top: 20px;">
@@ -701,6 +709,45 @@
         var element = document.body;
         element.classList.toggle("dark-mode");
     }
+
+    const navLinks = document.querySelectorAll('.nav-item')
+    const menuToggle = document.getElementById('navbarSupportedContent')
+    const about = document.getElementById('fifth');
+    const events = document.getElementById('second');
+    const team = document.getElementById('fourth');
+    const opportunities = document.getElementById('sixth');
+    const feedback = document.getElementById('feedback');
+    const contact = document.getElementById('tenth');
+    const bsCollapse = new bootstrap.Collapse(menuToggle, {
+        toggle : false
+    })
+    navLinks.forEach((l) => {
+        l.addEventListener('click', () => {
+            bsCollapse.toggle();
+            if(window.innerWidth < 992) {
+                about.style.scrollMarginTop = "420px";
+                events.style.scrollMarginTop = "420px";
+                team.style.scrollMarginTop = "420px";
+                opportunities.style.scrollMarginTop = "420px";
+                feedback.style.scrollMarginTop = "420px";
+                contact.style.scrollMarginTop = "420px";
+            }
+        })
+    })
+    function resetScrollMarginTop() {
+        about.style.scrollMarginTop = "0";
+        events.style.scrollMarginTop = "0";
+        team.style.scrollMarginTop = "0";
+        opportunities.style.scrollMarginTop = "0";
+        feedback.style.scrollMarginTop = "0";
+        contact.style.scrollMarginTop = "0";
+    }
+</script>
+<script>
+    let loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+            loader.style.display = "none"
+        })
 </script>
 
 </html>
