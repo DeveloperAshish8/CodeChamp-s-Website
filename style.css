@@ -620,8 +620,6 @@ footer {
 
 /* Preloader styles start here */
 #preloader {
-  background: url('ux_design_guidlines/pre-loader.gif') no-repeat center;
-  background-color: black;
   height: 100vh;
   width: 100%;
   position: fixed;
