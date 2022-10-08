@@ -68,6 +68,10 @@
   margin-left: 30px;
 }
 
+.dark-anchor:hover{
+  color: #fd7014;
+}
+
 .hamburger {
   border-color: #fd7014;
 }
