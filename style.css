@@ -6,8 +6,6 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
-
-
 /** navbar styling starts**/
 .logo {
   margin-left: 12vw;
@@ -422,4 +420,3 @@ footer {
     max-width: 80%;
   }
 }
-
