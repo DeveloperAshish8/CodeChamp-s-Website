@@ -8,7 +8,7 @@ This is an Open Source Community Website which contain details on past events, s
 
 ## 📍Tech Stacks
 
-<img src="./images/html image.png" alt="Sublime's custom image" width="100px" height="120px"/> <img src="./images/css image.png" alt="Sublime's custom image" width="100px" height="120px"/> <img src="./images/bootstap.png" alt="Sublime's custom image" width="100px" height="120px"/> <img src="./images/javascript.png" alt="Sublime's custom image" width="100px" height="120px"/>
+<img src="./images/Html image.png" alt="Sublime's custom image" width="100px" height="120px"/> <img src="./images/Css image.png" alt="Sublime's custom image" width="140px" height="140px"/> <img src="./images/Bootstap.png" alt="Sublime's custom image" width="100px" height="120px"/> <img src="./images/Javascript.png" alt="Sublime's custom image" width="100px" height="140px"/>
 
 ## 📍Acknowledgements
 
