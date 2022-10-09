@@ -1,233 +1,373 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="description"
-        content="CodeChamp is the Community of Coding Enthusiasts,Where we Share Resources, Roadmaps and Opportunities Updates to explore technologies,Together we aim to explore the untouched world of technologies.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="CodeChamp is the Community of Coding Enthusiasts,Where we Share Resources, Roadmaps and Opportunities Updates to explore technologies,Together we aim to explore the untouched world of technologies."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CodeChamp</title>
-    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="icon" type="image/png" href="./images/logo.png" />
     <!--bootstrap Css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <!--external css-->
-    <link href="./style.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" />
     <!--bootstrap icons cdn-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+  </head>
 
-</head>
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3EL4753RH2"></script>
-<script>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-3EL4753RH2"
+  ></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-3EL4753RH2');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-3EL4753RH2");
+  </script>
 
-<!--Google ads-->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1210592339079044"
-    crossorigin="anonymous"></script>
+  <!--Google ads-->
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1210592339079044"
+    crossorigin="anonymous"
+  ></script>
 
-
-<body>
+  <body>
+    <!--preloader starts-->
+    <div id="preloader">
+      <p class="preloader_text preloader_text1"></p>
+      <p class="preloader_text preloader_text2">TOGETHER</p>
+    </div>
+    <!--preloader ends-->
     <!--navbar starts-->
     <nav class="navbar navbar-expand-lg sticky-top bg-white" id="Navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand ml-0 logo" href="#"><img src="./images/logo.png"
-                    style="height: 40px; width:80px; filter:brightness(120%)"></a>
-            <!--hamburger button for mobile view starts-->
-            <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--hamburger button for mobile view ends-->
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-ul">
-                    <li class="nav-item">
-                        <a class="nav-link dark-anchor" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dark-anchor" href="#fifth">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dark-anchor" href="#second">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dark-anchor" href="#fourth">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dark-anchor" href="#sixth">Opportunities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dark-anchor" href="./internships.html">Interships / Jobs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dark-anchor" href="#feedback">Feedbacks</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dark-anchor" href="#tenth">Contact Us</a>
-                    </li>
-                    <div class="form-check form-switch d-flex align-items-center mx-2">
-                        <input type="checkbox" class="checkbox" id="checkbox" onclick="darkModeToggler()">
-                        <label for="checkbox" class="label" id="toggle-switch">
-                            <i class="bi bi-sun fs-6" style="font-size: 0.6rem !important;"></i>
-                            <i class="bi bi-moon fs-6" style="font-size: 0.6rem !important;"></i>
-                            <div class='ball'>
-                        </label>
-                    </div>
-                </ul>
+      <div class="container-fluid">
+        <a class="navbar-brand ml-0 logo" href="#"
+          ><img
+            src="./images/logo.png"
+            style="height: 40px; width: 80px; filter: brightness(120%)"
+        /></a>
+        <!--hamburger button for mobile view starts-->
+        <button
+          class="navbar-toggler hamburger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--hamburger button for mobile view ends-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-ul">
+            <li class="nav-item">
+              <a class="nav-link dark-anchor" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dark-anchor" href="#fifth">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dark-anchor" href="#second">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dark-anchor" href="#fourth">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dark-anchor" href="#sixth">Opportunities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dark-anchor" href="./internships.html"
+                >Internships / Jobs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dark-anchor" href="#feedback">Feedbacks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dark-anchor" href="#tenth">Contact Us</a>
+            </li>
+            <div class="form-check form-switch d-flex align-items-center mx-2">
+              <input
+                type="checkbox"
+                class="checkbox"
+                id="checkbox"
+                onclick="darkModeToggler()"
+              />
+              <label for="checkbox" class="label" id="toggle-switch">
+                <i
+                  class="bi bi-sun fs-6"
+                  style="font-size: 0.6rem !important"
+                ></i>
+                <i
+                  class="bi bi-moon fs-6"
+                  style="font-size: 0.6rem !important"
+                ></i>
+                <div class="ball"></div>
+              </label>
             </div>
+          </ul>
         </div>
+      </div>
     </nav>
     <!--navbar ends-->
     <!--First intro container starts-->
     <div class="container" id="first">
-        <div class="discription">
-            <h2 class="heading">CodeChamp</h2>
-            <p class="content">CodeChamp is the Community of Coding Enthusiasts,
-where we provide Resources, share Roadmaps, and give numerous Opportunity Updates in the field of Competitive Programming,Development,and Cyber Security. Along with it,
-we organize various insightful Workshops and guidance Sessions for an apprentice to learn from new.In one line,
-Together we aim to explore the untouched world of technology.
-            </p>
-            </br>
-            <!--<a href="https://lu.ma/opensource"><button class="common-button register" type="button"
+      <div class="discription">
+        <h2 class="heading">CodeChamp</h2>
+        <p class="content">
+          CodeChamp is the Community of Coding Enthusiasts, where we provide
+          Resources, share Roadmaps ,and give numerous Opportunities Updates  in the field of Competitive Programming,Development and Cyber Security.
+          Along with it,we organize various insightful Workshops, guidance Sessions for an apperentice to learn from 
+          new. In one line,"Together we aim to explore the untouched world of
+          technology".
+        </p>
+        <br />
+        <!--<a href="https://lu.ma/opensource"><button class="common-button register" type="button"
                     style="margin-left: 5px;">
                     REGISTER FOR EVENT
                 </button></a>-->
-            <a href="https://discord.gg/vVM4hBKnHt"><button class="common-button" type="button"
-                    style="margin-left: 5px;">
-                    JOIN US
-                </button></a>
+        <a href="https://discord.gg/vVM4hBKnHt"
+          ><button class="common-button" type="button" style="margin-left: 5px">
+            JOIN US
+          </button></a
+        >
 
-            <br>
-            <br>
-            <p class="content">Be a Part of our community and interact with like-minded people</p>
-        </div>
-        <div class="image">
-            <img class="intro-image" src="./images/Animated Community Image.png" alt="Community Image">
-        </div>
+        <br />
+        <br />
+        <p class="content">
+          Be a Part of our community and interact with like-minded people
+        </p>
+      </div>
+      <div class="image">
+        <img
+          class="intro-image"
+          src="./images/Animated Community Image.png"
+          alt="Community Image"
+        />
+      </div>
     </div>
     <!--First intro container ends-->
     <!--Events section starts-->
     <div class="events mt-6" id="second">
-        <h1 class="heading text-center">
-            Our Events
-        </h1>
-        <hr />
-        <div class="event-cards container">
-            <div class="card event common-card" style="width: 20rem; margin-top: 20px;">
-                <img src="./images/Cyber Security Event.png" class="card-img-top" style="border-radius:15px;"
-                    alt="Fullstack Banner">
-                <div class="card-body home-card">
-
-                    <a href="https://youtu.be/IRcG4fAc_gU" class="btn btn-primary rec-button common-button"
-                        target="_blank">WATCH RECORDING</a>
-                </div>
-            </div>
-            <div class="card event common-card" style="width: 20rem; margin-top: 20px;">
-                <img src="./images/Cp Event.jpeg" class="card-img-top" style="border-radius:15px;"
-                    alt="Fullstack Banner">
-                <div class="card-body home-card">
-
-                    <a href="https://youtu.be/phH3FrpGYjg" class="btn btn-primary rec-button common-button"
-                        target="_blank">WATCH RECORDING</a>
-                </div>
-            </div>
-            <div class="card event common-card" style="width: 20rem; margin-top: 20px;">
-                <img src="./images/Android Session.jpeg" class="card-img-top" style="border-radius:15px;"
-                    alt="Fullstack Banner">
-                <div class="card-body home-card">
-
-                    <a href="https://youtu.be/_DnGURYqkDE" class="btn btn-primary rec-button 
-                common-button" target="_blank">WATCH RECORDING</a>
-                </div>
-            </div>
+      <h1 class="heading text-center">Our Events</h1>
+      <hr />
+      <div class="event-cards container">
+        <div
+          class="card event common-card"
+          style="width: 20rem; margin-top: 20px"
+        >
+          <img
+            src="./images/Cyber Security Event.png"
+            class="card-img-top"
+            style="border-radius: 15px"
+            alt="Fullstack Banner"
+          />
+          <div class="card-body home-card">
+            <a
+              href="https://youtu.be/IRcG4fAc_gU"
+              class="btn btn-primary rec-button common-button"
+              target="_blank"
+              >WATCH RECORDING</a
+            >
+          </div>
         </div>
+        <div
+          class="card event common-card"
+          style="width: 20rem; margin-top: 20px"
+        >
+          <img
+            src="./images/Cp Event.jpeg"
+            class="card-img-top"
+            style="border-radius: 15px"
+            alt="Fullstack Banner"
+          />
+          <div class="card-body home-card">
+            <a
+              href="https://youtu.be/phH3FrpGYjg"
+              class="btn btn-primary rec-button common-button"
+              target="_blank"
+              >WATCH RECORDING</a
+            >
+          </div>
+        </div>
+        <div
+          class="card event common-card"
+          style="width: 20rem; margin-top: 20px"
+        >
+          <img
+            src="./images/Android Session.jpeg"
+            class="card-img-top"
+            style="border-radius: 15px"
+            alt="Fullstack Banner"
+          />
+          <div class="card-body home-card">
+            <a
+              href="https://youtu.be/_DnGURYqkDE"
+              class="btn btn-primary rec-button common-button"
+              target="_blank"
+              >WATCH RECORDING</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
     <!--Events section ends-->
     <br />
     <br />
     <div class="joinus mt-6" id="third">
-        <h1 class="heading text-center">
-            Be a Part of Us
-        </h1>
-        <hr />
-        <div class="container joinus-cards">
-            <a href="https://www.linkedin.com/company/codechamp03/" target="_blank" rel="noreferrer"
-                class="joinus-anchor">
-                <div class="card joinus-card common-card" style="width: 18rem;" target="_blank">
-                    <i class="bi bi-linkedin joinus-icons" style="color: #0077b5;"></i>
-                    <div class="card-body home-card">
-                        <h3 class="card-title text-center">LinkedIn Page</h3>
-                        <p class="card-text content">Follow our LinkedIn page where we post some tech stuff and get
-                            updated about our upcomng sessions.</p>
-                    </div>
-                </div>
-            </a>
+      <h1 class="heading text-center">Be a Part of Us</h1>
+      <hr />
+      <div class="container joinus-cards">
+        <a
+          href="https://www.linkedin.com/company/codechamp03/"
+          target="_blank"
+          rel="noreferrer"
+          class="joinus-anchor"
+        >
+          <div
+            class="card joinus-card common-card"
+            style="width: 18rem"
+            target="_blank"
+          >
+            <i class="bi bi-linkedin joinus-icons" style="color: #0077b5"></i>
+            <div class="card-body home-card">
+              <h3 class="card-title text-center">LinkedIn Page</h3>
+              <p class="card-text content">
+                Follow our LinkedIn page where we post some tech stuff and get
+                updated about our upcomng sessions.
+              </p>
+            </div>
+          </div>
+        </a>
 
-            <a href="https://discord.gg/vVM4hBKnHt" target="_blank" rel="noreferrer" class="joinus-anchor">
-                <div class="card joinus-card common-card" style="width: 18rem;" target="_blank">
-                    <i class="bi bi-discord joinus-icons " style="color:#5865F2;"></i>
-                    <div class="card-body home-card">
-                        <h3 class="card-title text-center">Discord Server</h3>
-                        <p class="card-text content">Join our Discord server to interact with the students around the
-                            globe also, ask your doubts with our mentors. </p>
-                    </div>
-                </div>
-            </a>
+        <a
+          href="https://discord.gg/vVM4hBKnHt"
+          target="_blank"
+          rel="noreferrer"
+          class="joinus-anchor"
+        >
+          <div
+            class="card joinus-card common-card"
+            style="width: 18rem"
+            target="_blank"
+          >
+            <i class="bi bi-discord joinus-icons" style="color: #5865f2"></i>
+            <div class="card-body home-card">
+              <h3 class="card-title text-center">Discord Server</h3>
+              <p class="card-text content">
+                Join our Discord server to interact with the students around the
+                globe also, ask your doubts with our mentors.
+              </p>
+            </div>
+          </div>
+        </a>
 
-            <a href="https://t.me/codechamp03" target="_blank" rel="noreferrer" class="joinus-anchor">
-                <div class="card joinus-card common-card" style="width: 18rem;" target="_blank">
-                    <i class="bi bi-telegram joinus-icons" style="color:#0088CC;"></i>
-                    <div class="card-body home-card">
-                        <h3 class="card-title text-center">Telegram Channel</h3>
-                        <p class="card-text content">Join our telegram channel and get information about best resources
-                            and stay updated about opportunities.</p>
-                    </div>
-                </div>
-            </a>
+        <a
+          href="https://t.me/codechamp03"
+          target="_blank"
+          rel="noreferrer"
+          class="joinus-anchor"
+        >
+          <div
+            class="card joinus-card common-card"
+            style="width: 18rem"
+            target="_blank"
+          >
+            <i class="bi bi-telegram joinus-icons" style="color: #0088cc"></i>
+            <div class="card-body home-card">
+              <h3 class="card-title text-center">Telegram Channel</h3>
+              <p class="card-text content">
+                Join our telegram channel and get information about best
+                resources and stay updated about opportunities.
+              </p>
+            </div>
+          </div>
+        </a>
 
-            <a href="https://www.instagram.com/codechamp03/" target="_blank" rel="noreferrer" class="joinus-anchor">
-                <div class="card joinus-card common-card" style="width: 18rem;" target="_blank">
-                    <i class="bi bi-instagram joinus-icons" style="color: #DD2A7B;"></i>
-                    <div class="card-body home-card">
-                        <h3 class="card-title text-center">Instagram Page</h3>
-                        <p class="card-text content">Follow us on Instagram to get programming memes, technical stuffs
-                            and short resources.</p>
-                    </div>
-                </div>
-            </a>
+        <a
+          href="https://www.instagram.com/codechamp03/"
+          target="_blank"
+          rel="noreferrer"
+          class="joinus-anchor"
+        >
+          <div
+            class="card joinus-card common-card"
+            style="width: 18rem"
+            target="_blank"
+          >
+            <i class="bi bi-instagram joinus-icons" style="color: #dd2a7b"></i>
+            <div class="card-body home-card">
+              <h3 class="card-title text-center">Instagram Page</h3>
+              <p class="card-text content">
+                Follow us on Instagram to get programming memes, technical
+                stuffs and short resources.
+              </p>
+            </div>
+          </div>
+        </a>
 
-            <a href="https://github.com/DeveloperAshish8/CodeChamp-s-Website" target="_blank" rel="noreferrer"
-                class="joinus-anchor">
-                <div class="card joinus-card common-card" style="width: 18rem;" target="_blank">
-                    <i class="bi bi-github joinus-icons" style="color: black;"></i>
-                    <div class="card-body home-card">
-                        <h3 class="card-title text-center">Github </h3>
-                        <p class="card-text content">Want to contribute to our website, folk the repository from here
-                            and start contributing.</p>
-                    </div>
-                </div>
-            </a>
+        <a
+          href="https://github.com/DeveloperAshish8/CodeChamp-s-Website"
+          target="_blank"
+          rel="noreferrer"
+          class="joinus-anchor"
+        >
+          <div
+            class="card joinus-card common-card"
+            style="width: 18rem"
+            target="_blank"
+          >
+            <i class="bi bi-github joinus-icons" style="color: black"></i>
+            <div class="card-body home-card">
+              <h3 class="card-title text-center">Github</h3>
+              <p class="card-text content">
+                Want to contribute to our website, folk the repository from here
+                and start contributing.
+              </p>
+            </div>
+          </div>
+        </a>
 
-            <a href="https://www.youtube.com/channel/UCw39myIHyYoICgsTh3cdYMQ" target="_blank" rel="noreferrer"
-                class="joinus-anchor">
-                <div class="card joinus-card common-card" style="width: 18rem;" target="_blank">
-                    <i class="bi bi-youtube joinus-icons" style="color: red;"></i>
-                    <div class="card-body home-card">
-                        <h3 class="card-title text-center">YouTube Channel</h3>
-                        <p class="card-text content">Subscribe our Channel on YouTube and get recorded sessions if you
-                            missed them.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
+        <a
+          href="https://www.youtube.com/channel/UCw39myIHyYoICgsTh3cdYMQ"
+          target="_blank"
+          rel="noreferrer"
+          class="joinus-anchor"
+        >
+          <div
+            class="card joinus-card common-card"
+            style="width: 18rem"
+            target="_blank"
+          >
+            <i class="bi bi-youtube joinus-icons" style="color: red"></i>
+            <div class="card-body home-card">
+              <h3 class="card-title text-center">YouTube Channel</h3>
+              <p class="card-text content">
+                Subscribe our Channel on YouTube and get recorded sessions if
+                you missed them.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
     <br />
     <br />
@@ -235,316 +375,548 @@ Together we aim to explore the untouched world of technology.
     <!--Members info starts-->
 
     <div class="mt-6" id="fourth">
-        <h1 class="heading text-center">
-            Our Team Members
-        </h1>
-        <hr />
-        <br />
-        <br>
-        <div class="team-members carousel slide" data-bs-interval="2000" data-bs-ride="carousel">
-            <div class="carousel-item card active common-card-2" style="padding: 20px;">
-                <div class="card ml-4 common-card"
-                    style="width: 20rem; border-radius: 15px; display: inline-block; margin-right: 80px;">
-                    <img class="card-img-top team-image" src="./images/ashish bw.jpeg" alt="Card image cap">
-                    <div class="card-body home-card">
-                        <h4 class="card-title text-center">Ashish Kumar</h4>
-                        <p class="content text-center">Founder</p>
-                        <a href="https://www.linkedin.com/in/ashish-kumar-he-him-4566211a3/"> <i class="bi bi-linkedin"
-                                style="font-size: 1.5rem;"></i></a>
-
-                    </div>
-                </div>
+      <h1 class="heading text-center">Our Team Members</h1>
+      <hr />
+      <br />
+      <br />
+      <div
+        class="team-members carousel slide"
+        data-bs-interval="2000"
+        data-bs-ride="carousel"
+      >
+        <div
+          class="carousel-item card active common-card-2"
+          style="padding: 20px"
+        >
+          <div
+            class="card ml-4 common-card"
+            style="
+              width: 20rem;
+              border-radius: 15px;
+              display: inline-block;
+              margin-right: 80px;
+            "
+          >
+            <img
+              class="card-img-top team-image"
+              src="./images/ashish bw.jpeg"
+              alt="Card image cap"
+            />
+            <div class="card-body home-card">
+              <h4 class="card-title text-center">Ashish Kumar</h4>
+              <p class="content text-center">Founder</p>
+              <a
+                href="https://www.linkedin.com/in/ashish-kumar-he-him-4566211a3/"
+              >
+                <i class="bi bi-linkedin" style="font-size: 1.5rem"></i
+              ></a>
             </div>
-            <div class="carousel-item card common-card-2" style="padding: 20px;">
-                <div class="card ml-4 common-card"
-                    style="width: 20rem; border-radius: 15px; display: inline-block; margin-right: 80px;">
-                    <img class="card-img-top team-image" src="./images/user image.jpg" alt="Card image cap">
-                    <div class="card-body home-card">
-                        <h4 class="card-title text-center">Abhishek Anand</h4>
-                        <p class="content text-center">Co-founder</p>
-                        <a style="margin-left: 10px;" href="https://www.linkedin.com/in/abhi-anand-b484b11a0"> <i
-                                class="bi bi-linkedin" style="font-size: 1.5rem;" target="_blank"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item card common-card-2" style="padding: 20px;">
-                <div class="card ml-4 common-card"
-                    style="width: 20rem; border-radius: 15px; display: inline-block; margin-right: 80px;">
-                    <img class="card-img-top team-image" src="./images/Subham image.jpeg" alt="Card image cap">
-                    <div class="card-body home-card">
-                        <h4 class="card-title text-center">Subham Kumar Jha</h4>
-                        <p class="content text-center">Community Manager</p>
-                        <a style="margin-left: 10px;" href="https://www.linkedin.com/in/subham-kumar-355a63225"
-                            target="_blank"> <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item card common-card-2 " style="padding: 20px;">
-                <div class="card ml-4 common-card"
-                    style="width: 20rem; border-radius: 15px; display: inline-block; margin-right: 80px;">
-                    <img class="card-img-top team-image" src="./images/Ayush image.jpg" alt="Card image cap">
-                    <div class="card-body home-card">
-                        <h4 class="card-title text-center">Ayush raj</h4>
-                        <p class="content text-center">Content Manager</p>
-                        <a style="margin-left: 10px;" href="https://www.linkedin.com/in/ayush-raj-8bb362213"
-                            target="_blank"> <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item card common-card-2 " style="padding: 20px;">
-                <div class="card ml-4 common-card"
-                    style="width: 20rem; border-radius: 15px; display: inline-block; margin-right: 80px;">
-                    <img class="card-img-top team-image" src="./images/Shruti Image.jpeg" alt="Card image cap">
-                    <div class="card-body home-card">
-                        <h4 class="card-title text-center">Shruti Agrawal</h4>
-                        <p class="content text-center">Event Manager</p>
-                        <a style="margin-left: 10px;" href="https://www.linkedin.com/in/shruti-agrawal-7bb416243"
-                            target="_blank"> <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item card common-card-2 " style="padding: 20px;">
-                <div class="card ml-4 common-card"
-                    style="width: 20rem; border-radius: 15px; display: inline-block; margin-right: 80px;">
-                    <img class="card-img-top team-image" src="./images/Sandesh image.jpeg" alt="Card image cap">
-                    <div class="card-body home-card">
-                        <h4 class="card-title text-center">Sandesh Kumar</h4>
-                        <p class="content text-center">Web Development Team</p>
-                        <a style="margin-left: 10px;" href="https://www.linkedin.com/in/sandesh-kumar-0a7224234"> <i
-                                class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item card common-card-2 " style="padding: 20px;">
-                <div class="card ml-4 common-card"
-                    style="width: 20rem; border-radius: 15px; display: inline-block; margin-right: 80px;">
-                    <img class="card-img-top team-image" src="./images/user image.jpg" alt="Card image cap">
-                    <div class="card-body home-card">
-                        <h4 class="card-title text-center">Himanshu Kumar</h4>
-                        <p class="content text-center">Web Development Team</p>
-                        <a style="margin-left: 10px;" href="https://www.linkedin.com/in/i-himanshu"> <i
-                                class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item card common-card-2 " style="padding: 20px;">
-                <div class="card ml-4 common-card"
-                    style="width: 20rem; border-radius: 15px; display: inline-block; margin-right: 80px;">
-                    <img class="card-img-top team-image" src="./images/Anjali image.jpeg" alt="Card image cap">
-                    <div class="card-body home-card">
-                        <h4 class="card-title text-center">Anjali Singh</h4>
-                        <p class="content text-center">Graphics Designer</p>
-                        <a style="margin-left: 10px;" href="https://www.linkedin.com/in/anjali-singh-2a5109231/"> <i
-                                class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="carousel-item card common-card-2" style="padding: 20px">
+          <div
+            class="card ml-4 common-card"
+            style="
+              width: 20rem;
+              border-radius: 15px;
+              display: inline-block;
+              margin-right: 80px;
+            "
+          >
+            <img
+              class="card-img-top team-image"
+              src="./images/user image.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body home-card">
+              <h4 class="card-title text-center">Abhishek Anand</h4>
+              <p class="content text-center">Co-founder</p>
+              <a
+                style="margin-left: 10px"
+                href="https://www.linkedin.com/in/abhi-anand-b484b11a0"
+              >
+                <i
+                  class="bi bi-linkedin"
+                  style="font-size: 1.5rem"
+                  target="_blank"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item card common-card-2" style="padding: 20px">
+          <div
+            class="card ml-4 common-card"
+            style="
+              width: 20rem;
+              border-radius: 15px;
+              display: inline-block;
+              margin-right: 80px;
+            "
+          >
+            <img
+              class="card-img-top team-image"
+              src="./images/Subham image.jpeg"
+              alt="Card image cap"
+            />
+            <div class="card-body home-card">
+              <h4 class="card-title text-center">Subham Kumar Jha</h4>
+              <p class="content text-center">Community Manager</p>
+              <a
+                style="margin-left: 10px"
+                href="https://www.linkedin.com/in/subham-kumar-355a63225"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin" style="font-size: 1.5rem"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item card common-card-2" style="padding: 20px">
+          <div
+            class="card ml-4 common-card"
+            style="
+              width: 20rem;
+              border-radius: 15px;
+              display: inline-block;
+              margin-right: 80px;
+            "
+          >
+            <img
+              class="card-img-top team-image"
+              src="./images/Ayush image.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body home-card">
+              <h4 class="card-title text-center">Ayush raj</h4>
+              <p class="content text-center">Content Manager</p>
+              <a
+                style="margin-left: 10px"
+                href="https://www.linkedin.com/in/ayush-raj-8bb362213"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin" style="font-size: 1.5rem"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item card common-card-2" style="padding: 20px">
+          <div
+            class="card ml-4 common-card"
+            style="
+              width: 20rem;
+              border-radius: 15px;
+              display: inline-block;
+              margin-right: 80px;
+            "
+          >
+            <img
+              class="card-img-top team-image"
+              src="./images/Shruti Image.jpeg"
+              alt="Card image cap"
+            />
+            <div class="card-body home-card">
+              <h4 class="card-title text-center">Shruti Agrawal</h4>
+              <p class="content text-center">Event Manager</p>
+              <a
+                style="margin-left: 10px"
+                href="https://www.linkedin.com/in/shruti-agrawal-7bb416243"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin" style="font-size: 1.5rem"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item card common-card-2" style="padding: 20px">
+          <div
+            class="card ml-4 common-card"
+            style="
+              width: 20rem;
+              border-radius: 15px;
+              display: inline-block;
+              margin-right: 80px;
+            "
+          >
+            <img
+              class="card-img-top team-image"
+              src="./images/Sandesh image.jpeg"
+              alt="Card image cap"
+            />
+            <div class="card-body home-card">
+              <h4 class="card-title text-center">Sandesh Kumar</h4>
+              <p class="content text-center">Web Development Team</p>
+              <a
+                style="margin-left: 10px"
+                href="https://www.linkedin.com/in/sandesh-kumar-0a7224234"
+              >
+                <i class="bi bi-linkedin" style="font-size: 1.5rem"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item card common-card-2" style="padding: 20px">
+          <div
+            class="card ml-4 common-card"
+            style="
+              width: 20rem;
+              border-radius: 15px;
+              display: inline-block;
+              margin-right: 80px;
+            "
+          >
+            <img
+              class="card-img-top team-image"
+              src="./images/user image.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body home-card">
+              <h4 class="card-title text-center">Himanshu Kumar</h4>
+              <p class="content text-center">Web Development Team</p>
+              <a
+                style="margin-left: 10px"
+                href="https://www.linkedin.com/in/i-himanshu"
+              >
+                <i class="bi bi-linkedin" style="font-size: 1.5rem"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item card common-card-2" style="padding: 20px">
+          <div
+            class="card ml-4 common-card"
+            style="
+              width: 20rem;
+              border-radius: 15px;
+              display: inline-block;
+              margin-right: 80px;
+            "
+          >
+            <img
+              class="card-img-top team-image"
+              src="./images/Anjali image.jpeg"
+              alt="Card image cap"
+            />
+            <div class="card-body home-card">
+              <h4 class="card-title text-center">Anjali Singh</h4>
+              <p class="content text-center">Graphics Designer</p>
+              <a
+                style="margin-left: 10px"
+                href="https://www.linkedin.com/in/anjali-singh-2a5109231/"
+              >
+                <i class="bi bi-linkedin" style="font-size: 1.5rem"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!--members info ends-->
 
-    </br>
+    <br />
     <!--what we offer starts-->
     <div class="WeOffers" id="fifth">
-        <h1 class="heading text-center">
-            Why to Join Us?
-        </h1>
-        <hr />
-        <br>
-        <div class="WhyToJoin">
-            <ul class="content mobile-view" id="Content">
-                <li>Interaction with Students around the globe.</li>
-                <li>Mentors support and guide.</li>
-                <li>Webinars and workshops by Experts.</li>
-                <li>Keeps to updated about latest opportunities.</li>
-                <li>Hackathons and Intership Opportunities.</li>
-                <li>Complete learning Environment.</li>
-            </ul>
-            <div class="image">
-                <img src="./images/what we offer image.jpg" alt="What we Offer Image">
-            </div>
+      <h1 class="heading text-center">Why to Join Us?</h1>
+      <hr />
+      <br />
+      <div class="WhyToJoin">
+        <ul class="content mobile-view" id="Content">
+          <li>Interaction with Students around the globe.</li>
+          <li>Mentors support and guide.</li>
+          <li>Webinars and workshops by Experts.</li>
+          <li>Keeps to updated about latest opportunities.</li>
+          <li>Hackathons and Intership Opportunities.</li>
+          <li>Complete learning Environment.</li>
+        </ul>
+        <div class="image">
+          <img
+            src="./images/what we offer image.jpg"
+            alt="What we Offer Image"
+          />
         </div>
-    </div>
+      </div>
     </div>
     <!--what we offer ends-->
     <br />
     <!--Opportunities section starts-->
 
     <div class="events mt-6" id="sixth">
-        <h1 class="heading text-center">
-            Opportunities
-        </h1>
-        <hr />
-        <div class="opportunities container">
-            <div class="card event common-card" style="width: 20rem; margin-top: 20px;">
-                <img src="./images/Join us as Mentor.jpeg" class="card-img-top" style="border-radius:15px;"
-                    alt="Fullstack Banner">
-                <div class="card-body home-card">
-                    <h5 class="card-title text-center">Join Us As Mentor</h5>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc35m_65K3moo82K5it55Cae0zUtJVjpIaOK66ProF6UDaGtw/viewform?usp=sf_link"
-                        class="btn btn-primary Intrested common-button">INTRESTED</a>
-                </div>
-            </div>
-            <div class="card event common-card" style="width: 20rem; margin-top: 20px;">
-                <img src="./images/Join our core Team.jpeg" class="card-img-top" style="border-radius:15px;"
-                    alt="Fullstack Banner">
-                <div class="card-body home-card">
-                    <h5 class="card-title text-center">Join Our Core Team</h5>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSds0RlPkF6oz7q5lmpeeC3D-UiRjhM0DwlW-zvRAKSz4kZu5w/viewform?usp=sf_link"
-                        class="btn btn-primary Intrested common-button">INTRESTED</a>
-                </div>
-            </div>
-            <div class="card event common-card" style="width: 20rem; margin-top: 20px;">
-                <img src="./images/Volunteer banner.jpeg" class="card-img-top" style="border-radius:15px;"
-                    alt="Fullstack Banner">
-                <div class="card-body home-card">
-                    <h5 class="card-title text-center">Volunteer Us</h5>
-                    <a href="" class="btn btn-primary Intrested common-button">HIRING SOON</a>
-                </div>
-            </div>
+      <h1 class="heading text-center">Opportunities</h1>
+      <hr />
+      <div class="opportunities container">
+        <div
+          class="card event common-card"
+          style="width: 20rem; margin-top: 20px"
+        >
+          <img
+            src="./images/Join us as Mentor.jpeg"
+            class="card-img-top"
+            style="border-radius: 15px"
+            alt="Fullstack Banner"
+          />
+          <div class="card-body home-card">
+            <h5 class="card-title text-center">Join Us As Mentor</h5>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc35m_65K3moo82K5it55Cae0zUtJVjpIaOK66ProF6UDaGtw/viewform?usp=sf_link"
+              class="btn btn-primary Intrested common-button"
+              >INTRESTED</a
+            >
+          </div>
         </div>
+        <div
+          class="card event common-card"
+          style="width: 20rem; margin-top: 20px"
+        >
+          <img
+            src="./images/Join our core Team.jpeg"
+            class="card-img-top"
+            style="border-radius: 15px"
+            alt="Fullstack Banner"
+          />
+          <div class="card-body home-card">
+            <h5 class="card-title text-center">Join Our Core Team</h5>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSds0RlPkF6oz7q5lmpeeC3D-UiRjhM0DwlW-zvRAKSz4kZu5w/viewform?usp=sf_link"
+              class="btn btn-primary Intrested common-button"
+              >INTRESTED</a
+            >
+          </div>
+        </div>
+        <div
+          class="card event common-card"
+          style="width: 20rem; margin-top: 20px"
+        >
+          <img
+            src="./images/Volunteer banner.jpeg"
+            class="card-img-top"
+            style="border-radius: 15px"
+            alt="Fullstack Banner"
+          />
+          <div class="card-body home-card">
+            <h5 class="card-title text-center">Volunteer Us</h5>
+            <a href="" class="btn btn-primary Intrested common-button"
+              >HIRING SOON</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
     <!--Opportunities section Ends-->
     <br />
     <br />
     <!--Feedback section starts-->
     <div class="feedback-section" id="seventh">
-        <h1 class="heading text-center">
-            Our Beloved Members Feedbacks
-        </h1>
-        <hr />
-        <br />
-        <br />
+      <h1 class="heading text-center">Our Beloved Members Feedbacks</h1>
+      <hr />
+      <br />
+      <br />
 
-
-        <div class=" feedbacks" id="feedback">
-            <div class="card common-card" style="width: 19rem; border-radius: 15px; padding: 10px;">
-                <img class="card-img-top feedback-image" src="./images/Ayush kumar image.jpg" alt="Card image cap">
-                <div class="card-body home-card">
-                    <h4 class="card-title text-center">Ayush Kumar</h4>
-                    <p class="content text-center"> "A community is always helpful for the new learners, CodeChamp keeps
-                        me updated about best learning resources, opportunities etc."</p>
-                </div>
-            </div>
-            <div class="card common-card" style="width: 19rem; border-radius: 15px;padding: 10px;">
-                <img class="card-img-top feedback-image" src="./images/user image.jpg" alt="Card image cap">
-                <div class="card-body home-card">
-                    <h4 class="card-title text-center">You</h4>
-                    <p class="content text-center">You can also be featured in our website, share about your experience
-                        with CodeChamp at codechampcommunity@gmail.com</p>
-                </div>
-            </div>
+      <div class="feedbacks" id="feedback">
+        <div
+          class="card common-card"
+          style="width: 19rem; border-radius: 15px; padding: 10px"
+        >
+          <img
+            class="card-img-top feedback-image"
+            src="./images/Ayush kumar image.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body home-card">
+            <h4 class="card-title text-center">Ayush Kumar</h4>
+            <p class="content text-center">
+              "A community is always helpful for the new learners, CodeChamp
+              keeps me updated about best learning resources, opportunities
+              etc."
+            </p>
+          </div>
         </div>
+        <div
+          class="card common-card"
+          style="width: 19rem; border-radius: 15px; padding: 10px"
+        >
+          <img
+            class="card-img-top feedback-image"
+            src="./images/user image.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body home-card">
+            <h4 class="card-title text-center">You</h4>
+            <p class="content text-center">
+              You can also be featured in our website, share about your
+              experience with CodeChamp at codechampcommunity@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <!--Feedback section ends-->
     <br />
     <br />
     <!--collaborations starts-->
     <div class="collaboration" id="eighth">
-        <h1 class="heading text-center">
-            Our Collaborations
-        </h1>
-        <hr />
-        <br />
-        <br />
-        <div class="feedbacks">
-            <div class="partner-logo">
-                <img src="./images/Bepractical logo.webp" alt="Bepractical" width="200px" height="80px"
-                    style="margin-top: 40px;">
-            </div>
-
-            <div class="partner-logo">
-                <img src="./images/Coding Blocks.png" alt="Coding Blocks" width="250px" height="100px"
-                    style="margin-top: 40px;">
-            </div>
-
-            <div class="partner-logo">
-                <img src="./images/GDSC Gaya College of Engineering vertical color (3).png" alt="Coding Blocks"
-                    width="250px" height="150px" style="margin-top: 25px;">
-            </div>
+      <h1 class="heading text-center">Our Collaborations</h1>
+      <hr />
+      <br />
+      <br />
+      <div class="feedbacks">
+        <div class="partner-logo">
+          <img
+            src="./images/Bepractical logo.webp"
+            alt="Bepractical"
+            width="200px"
+            height="80px"
+            style="margin-top: 40px"
+          />
         </div>
+
+        <div class="partner-logo">
+          <img
+            src="./images/Coding Blocks.png"
+            alt="Coding Blocks"
+            width="250px"
+            height="100px"
+            style="margin-top: 40px"
+          />
+        </div>
+
+        <div class="partner-logo">
+          <img
+            src="./images/GDSC Gaya College of Engineering vertical color (3).png"
+            alt="Coding Blocks"
+            width="250px"
+            height="150px"
+            style="margin-top: 25px"
+          />
+        </div>
+      </div>
     </div>
     <!--collaborations ends-->
     <br />
     <br />
     <!--FAQ starts-->
     <div class="FAQ" id="ninth">
-        <h1 class="heading text-center">
-            FAQs
-        </h1>
-        <hr />
-        <br />
+      <h1 class="heading text-center">FAQs</h1>
+      <hr />
+      <br />
 
-        <div class="accordion" id="accordionExample" style="width: 70%; margin:auto;">
-            <div class="accordion-item faq" style="margin-top: 2rem;">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed faq-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        What is CodeChamp?
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body content">
-                        CodeChamp is the Community of Coding Enthusiasts, Where we Share Resources, Roadmaps and
-                        Opportunities Updates to explore technologies also, We organize various Workshops, Sessions
-                        for our folks to learn new things.
-                    </div>
-                </div>
+      <div
+        class="accordion"
+        id="accordionExample"
+        style="width: 70%; margin: auto"
+      >
+        <div class="accordion-item faq" style="margin-top: 2rem">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button collapsed faq-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+            >
+              What is CodeChamp?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body content">
+              CodeChamp is the Community of Coding Enthusiasts, Where we Share
+              Resources, Roadmaps and Opportunities Updates to explore
+              technologies also, We organize various Workshops, Sessions for our
+              folks to learn new things.
             </div>
-            <div class="accordion-item faq" style="margin-top: 3rem;">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed faq-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Why you should join CodeChamp?
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body content">
-                        Joining our community gives you exposure to the like minded peoples, you can ask your doubts
-                        with our mentors one to one on our discord server.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item faq" style="margin-top: 3rem;">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed faq-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        How to be our beloved member?
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body content">
-                        You can join us on our discord server by <a href="https://discord.gg/vVM4hBKnHt">clicking
-                            Here</a> also you can follow our LinkedIn page and stay updated about our new sessions.
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item faq" style="margin-top: 3rem;">
-                <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed faq-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        How to join our Team?
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body content">
-                        You can join our core team or can volunteer us by <a href="#sixth">clicking Here</a> . Joining
-                        our team means you are willing to work for our community members.
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="accordion-item faq" style="margin-top: 3rem">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed faq-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Why you should join CodeChamp?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body content">
+              Joining our community gives you exposure to the like minded
+              peoples, you can ask your doubts with our mentors one to one on
+              our discord server.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item faq" style="margin-top: 3rem">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed faq-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              How to be our beloved member?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body content">
+              You can join us on our discord server by
+              <a href="https://discord.gg/vVM4hBKnHt">clicking Here</a> also you
+              can follow our LinkedIn page and stay updated about our new
+              sessions.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item faq" style="margin-top: 3rem">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed faq-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              How to join our Team?
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body content">
+              You can join our core team or can volunteer us by
+              <a href="#sixth">clicking Here</a> . Joining our team means you
+              are willing to work for our community members.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!--FAQ ends-->
     <br />
@@ -553,154 +925,264 @@ Together we aim to explore the untouched world of technology.
 
     <!--Contact us starts-->
     <div class="contact-us" id="tenth">
-        <h1 class="heading text-center">
-            Contact-Us
-        </h1>
-        <hr />
-        <br />
-        <div class="contact container">
-            <div class="form-container">
-                <form action="https://formspree.io/f/xbjbrgpv" method="POST">
-                    <input class="form-control" type="email" name="email" placeholder="mail@example.com"
-                        style="margin-top: 20px;">
+      <h1 class="heading text-center">Contact-Us</h1>
+      <hr />
+      <br />
+      <div class="contact container">
+        <div class="form-container">
+          <form action="https://formspree.io/f/xbjbrgpv" method="POST">
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              placeholder="mail@example.com"
+              style="margin-top: 20px"
+            />
 
-                    <input class="form-control" type="text" name="name" placeholder="Your Name"
-                        style="margin-top: 20px;" required>
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              style="margin-top: 20px"
+              required
+            />
 
-                    <input type="text" class="form-control" placeholder="Subject" required>
-                    <textarea class="form-control" name="message" placeholder="Write Your message here"
-                        style="margin-top: 20px;"></textarea>
-                    <input class="common-button" type="submit" style="margin-top: 20px; margin-left: 20%;">
-                </form>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Subject"
+              required
+            />
+            <textarea
+              class="form-control"
+              name="message"
+              placeholder="Write Your message here"
+              style="margin-top: 20px"
+            ></textarea>
+            <div style="text-align: center">
+              <input
+                class="common-button"
+                type="submit"
+                style="margin-top: 20px"
+              />
             </div>
-            <img class="intro-image contact-us-image" src="./images/contact us.png" alt="contact us image">
+          </form>
         </div>
+        <img
+          class="intro-image contact-us-image"
+          src="./images/contact us.png"
+          alt="contact us image"
+        />
+      </div>
     </div>
     <!--Contact us ends-->
     <br />
-    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+    <a
+      href="#"
+      id="toTopBtn"
+      class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+      data-abc="true"
+    ></a>
     <footer>
-        <div class="text-center" style="color: #fd7014; padding-top: 30px; font-weight: 800;">
-            <p style="font-size: 20px;">Made with ❤️ by us.</p>
+      <div
+        class="text-center"
+        style="color: #fd7014; padding-top: 30px; font-weight: 800"
+      >
+        <p style="font-size: 20px">Made with ❤️ by us.</p>
+      </div>
+      <div class="main-content">
+        <div class="about" style="margin-top: 20px">
+          <h4 class="heading footer-content text-center">CodeChamp</h4>
+          <br />
+          <p class="footer-content text">
+            CodeChamp is the Community of Coding Enthusiasts, Where we Share
+            Resources, Roadmaps and Opportunities Updates to explore
+            technologies.
+          </p>
         </div>
-        <div class="main-content">
-            <div class="about" style="margin-top: 20px;">
-                <h4 class="heading footer-content text-center">CodeChamp</h4>
-                <br />
-                <p class="footer-content text">CodeChamp is the Community of Coding Enthusiasts, Where we Share
-                    Resources, Roadmaps and Opportunities Updates to explore technologies.</p>
-            </div>
 
-            <div class="quick-links footer-content" style="margin-top: 20px;">
-                <h4 class="heading">Quick Navigate</h4>
-                <br />
-                <li><a href="#" class="text"> Home </a></li>
-                <li><a href="#fifth" class="text"> About </a></li>
-                <li><a href="#second" class="text"> Events </a></li>
-                <li><a href="#fourth" class="text"> Team </a></li>
-                <li><a href="#sixth" class="text"> Opportunities </a></li>
-                <li><a href="#feedback" class="text"> Feedbacks </a></li>
-            </div>
+        <div class="quick-links footer-content" style="margin-top: 20px">
+          <h4 class="heading">Quick Navigate</h4>
+          <br />
+          <li><a href="#" class="text"> Home </a></li>
+          <li>
+            <a href="#fifth" onclick="resetScrollMarginTop()" class="text">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#second" onclick="resetScrollMarginTop()" class="text">
+              Events
+            </a>
+          </li>
+          <li>
+            <a href="#fourth" onclick="resetScrollMarginTop()" class="text">
+              Team
+            </a>
+          </li>
+          <li>
+            <a href="#sixth" onclick="resetScrollMarginTop()" class="text">
+              Opportunities
+            </a>
+          </li>
+          <li>
+            <a href="#feedback" onclick="resetScrollMarginTop()" class="text">
+              Feedbacks
+            </a>
+          </li>
+        </div>
 
-            <div class="contact-details footer-content" style="margin-top: 20px;">
-                <h4 class="heading text-center">Contact</h4>
-                <br />
-                <li class="text"><i class="bi bi-geo-alt-fill"></i><span> Patna, India</span></li>
-                <li class="text"><i class="bi bi-envelope-paper"></i><span> codechampcommunity@gmail.com</span></li>
-            </div>
+        <div class="contact-details footer-content" style="margin-top: 20px">
+          <h4 class="heading text-center">Contact</h4>
+          <br />
+          <li class="text">
+            <i class="bi bi-geo-alt-fill"></i><span> Patna, India</span>
+          </li>
+          <li class="text">
+            <i class="bi bi-envelope-paper"></i
+            ><span> codechampcommunity@gmail.com</span>
+          </li>
         </div>
-        <div class="contact">
-            <div class="footer-socials">
-                <div class="icon linkedin">
-                    <div class="tooltip">
-                        LinkedIn
-                    </div>
-                    <span><a href="https://www.linkedin.com/company/codechamp03/"><i class="bi bi-linkedin"></i></a></span>
-                </div>
-                <div class="icon instagram">
-                    <div class="tooltip">
-                        Instagram
-                    </div>
-                    <span><a href="https://www.instagram.com/codechamp03/"><i class="bi bi-instagram"></i></a></span>
-                </div>
-                <div class="icon discord">
-                    <div class="tooltip">
-                        Discord
-                    </div>
-                    <span><a href="https://discord.gg/vVM4hBKnHt"><i class="bi bi-discord"></i></a></span>
-                </div>
-                <div class="icon github">
-                    <div class="tooltip">
-                        Github
-                    </div>
-                    <span><a href="https://github.com/DeveloperAshish8/CodeChamp-s-Website"><i class="bi bi-github"></i></a></span>
-                </div>
-                <div class="icon email">
-                    <div class="tooltip">
-                        email
-                    </div>
-                    <span><a href="https://mail.google.com/mail/u/0/#inbox/QgrcJHsTmcCtxjSBkpNplcTVVpXWxXjbhFl?compose=DmwnWsdMVpKjLGgbrSgPKcKNNrktMnvgTRQNBSBlKTWkMkbGFkKmLtMZXXLqsQpQLfpDHclpldcG"><i class="bi bi-envelope-fill"></i></a></span>
-                </div>
-            </div>
+      </div>
+      <div class="contact">
+        <div class="footer-socials">
+          <div class="icon linkedin">
+            <div class="tooltip">LinkedIn</div>
+            <span
+              ><a href="https://www.linkedin.com/company/codechamp03/"
+                ><i class="bi bi-linkedin"></i></a
+            ></span>
+          </div>
+          <div class="icon instagram">
+            <div class="tooltip">Instagram</div>
+            <span
+              ><a href="https://www.instagram.com/codechamp03/"
+                ><i class="bi bi-instagram"></i></a
+            ></span>
+          </div>
+          <div class="icon discord">
+            <div class="tooltip">Discord</div>
+            <span
+              ><a href="https://discord.gg/vVM4hBKnHt"
+                ><i class="bi bi-discord"></i></a
+            ></span>
+          </div>
+          <div class="icon github">
+            <div class="tooltip">Github</div>
+            <span
+              ><a href="https://github.com/DeveloperAshish8/CodeChamp-s-Website"
+                ><i class="bi bi-github"></i></a
+            ></span>
+          </div>
+          <div class="icon email">
+            <div class="tooltip">Email</div>
+            <span
+              ><a
+                href="https://mail.google.com/mail/u/0/#inbox/QgrcJHsTmcCtxjSBkpNplcTVVpXWxXjbhFl?compose=DmwnWsdMVpKjLGgbrSgPKcKNNrktMnvgTRQNBSBlKTWkMkbGFkKmLtMZXXLqsQpQLfpDHclpldcG"
+                ><i class="bi bi-envelope-fill"></i></a
+            ></span>
+          </div>
         </div>
-        <div class="copyright-content" style="color: white;">
-            <p>Copyright © 2022 <a href="#">CodeChamp</a> All Rights Reserved</p>
-        </div>
-        <br />
+      </div>
+      <div class="copyright-content" style="color: white">
+        <p>Copyright © 2022 <a href="#">CodeChamp</a> All Rights Reserved</p>
+      </div>
+      <br />
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://web.jscdn.repl.co/AOS/aos.js"></script>
     <script src="myScript.js"></script>
-</body>
-<script>
-    let mode = 'light';
+  </body>
+  <script>
+    let mode = "light";
     function darkModeToggler() {
-        if (mode === 'light') {
-            mode = 'dark';
-            document.getElementById('Navbar').classList.toggle('dark-nav');
-            document.getElementById('Content').style.color = 'white';
-            document.getElementById('toggle-switch').style.backgroundColor = 'black';
-            document.getElementById('toggle-switch').style.borderColor = 'white';
-            document.getElementById('Navbar').classList.remove('bg-white');
-            var elementAnchor = document.getElementsByClassName('dark-anchor');
-            for (var i = 0; i < elementAnchor.length; i++) {
-                elementAnchor[i].classList.toggle('dark-anchor-tag');
-            }
-            var elementCard = document.getElementsByClassName('common-card');
-            for (var i = 0; i < elementCard.length; i++) {
-                elementCard[i].classList.toggle('dark-card');
-            }
-            var elementCard2 = document.getElementsByClassName('common-card-2');
-            for (var i = 0; i < elementCard2.length; i++) {
-                elementCard2[i].classList.toggle('dark-card-2');
-            }
-
+      if (mode === "light") {
+        mode = "dark";
+        document.getElementById("Navbar").classList.toggle("dark-nav");
+        document.getElementById("Content").style.color = "white";
+        document.getElementById("toggle-switch").style.backgroundColor =
+          "black";
+        document.getElementById("toggle-switch").style.borderColor = "white";
+        document.getElementById("Navbar").classList.remove("bg-white");
+        var elementAnchor = document.getElementsByClassName("dark-anchor");
+        for (var i = 0; i < elementAnchor.length; i++) {
+          elementAnchor[i].classList.toggle("dark-anchor-tag");
         }
-        else {
-            mode = 'light';
-            document.getElementById('Navbar').classList.toggle('dark-nav');
-            document.getElementById('Content').style.color = '#696969';
-            document.getElementById('toggle-switch').style.backgroundColor = 'white';
-            document.getElementById('toggle-switch').style.borderColor = 'black';
-            document.getElementById('Navbar').classList.add('bg-white');
-            var elementAnchor = document.getElementsByClassName('dark-anchor');
-            for (var i = 0; i < elementAnchor.length; i++) {
-                elementAnchor[i].classList.toggle('dark-anchor-tag');
-            }
-            var elementCard = document.getElementsByClassName('common-card');
-            for (var i = 0; i < elementCard.length; i++) {
-                elementCard[i].classList.toggle('dark-card');
-            }
-            var elementCard2 = document.getElementsByClassName('common-card-2');
-            for (var i = 0; i < elementCard2.length; i++) {
-                elementCard2[i].classList.toggle('dark-card-2');
-            }
+        var elementCard = document.getElementsByClassName("common-card");
+        for (var i = 0; i < elementCard.length; i++) {
+          elementCard[i].classList.toggle("dark-card");
         }
-        var element = document.body;
-        element.classList.toggle("dark-mode");
+        var elementCard2 = document.getElementsByClassName("common-card-2");
+        for (var i = 0; i < elementCard2.length; i++) {
+          elementCard2[i].classList.toggle("dark-card-2");
+        }
+      } else {
+        mode = "light";
+        document.getElementById("Navbar").classList.toggle("dark-nav");
+        document.getElementById("Content").style.color = "#696969";
+        document.getElementById("toggle-switch").style.backgroundColor =
+          "white";
+        document.getElementById("toggle-switch").style.borderColor = "black";
+        document.getElementById("Navbar").classList.add("bg-white");
+        var elementAnchor = document.getElementsByClassName("dark-anchor");
+        for (var i = 0; i < elementAnchor.length; i++) {
+          elementAnchor[i].classList.toggle("dark-anchor-tag");
+        }
+        var elementCard = document.getElementsByClassName("common-card");
+        for (var i = 0; i < elementCard.length; i++) {
+          elementCard[i].classList.toggle("dark-card");
+        }
+        var elementCard2 = document.getElementsByClassName("common-card-2");
+        for (var i = 0; i < elementCard2.length; i++) {
+          elementCard2[i].classList.toggle("dark-card-2");
+        }
+      }
+      var element = document.body;
+      element.classList.toggle("dark-mode");
     }
-</script>
 
+    const navLinks = document.querySelectorAll(".nav-item");
+    const menuToggle = document.getElementById("navbarSupportedContent");
+    const about = document.getElementById("fifth");
+    const events = document.getElementById("second");
+    const team = document.getElementById("fourth");
+    const opportunities = document.getElementById("sixth");
+    const feedback = document.getElementById("feedback");
+    const contact = document.getElementById("tenth");
+    const bsCollapse = new bootstrap.Collapse(menuToggle, {
+      toggle: false,
+    });
+    navLinks.forEach((l) => {
+      l.addEventListener("click", () => {
+        bsCollapse.toggle();
+        if (window.innerWidth < 992) {
+          about.style.scrollMarginTop = "420px";
+          events.style.scrollMarginTop = "420px";
+          team.style.scrollMarginTop = "420px";
+          opportunities.style.scrollMarginTop = "420px";
+          feedback.style.scrollMarginTop = "420px";
+          contact.style.scrollMarginTop = "420px";
+        }
+      });
+    });
+    function resetScrollMarginTop() {
+      about.style.scrollMarginTop = "0";
+      events.style.scrollMarginTop = "0";
+      team.style.scrollMarginTop = "0";
+      opportunities.style.scrollMarginTop = "0";
+      feedback.style.scrollMarginTop = "0";
+      contact.style.scrollMarginTop = "0";
+    }
+  </script>
+  <script>
+    let loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    });
+  </script>
 </html>
