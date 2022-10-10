@@ -170,8 +170,8 @@
 .intro-image {
   max-width: 100%;
   min-height: 40vh;
-  vertical-align: middle;
-  justify-content: right;
+  float: right;
+  
 }
 /**first container area styling ends**/
 
@@ -195,7 +195,10 @@ hr {
   box-shadow: 0 1px 2px rgb(65, 64, 64);
   border-radius: 15px;
 }
-
+#second{
+  padding-top: 20px;
+  margin: 80px;
+}
 .event:hover {
   box-shadow: 0 0px 10px rgb(250, 135, 4);
   transition: all 0.3s linear;
