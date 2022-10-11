@@ -1109,18 +1109,20 @@
     ></script>
     <script src="https://web.jscdn.repl.co/AOS/aos.js"></script>
     <script src="myScript.js"></script>
+    <script src="./checkMode.js"></script>
   </body>
   <script>
-    let mode = "light";
     function darkModeToggler() {
+      let mode = localStorage.getItem("mode");
+      console.log(mode);
       if (mode === "light") {
-        mode = "dark";
-        document.getElementById("Navbar").classList.toggle("dark-nav");
+        localStorage.setItem("mode", "dark");
+        document.getElementById("Navbar").classList.remove("bg-white");
+        document.getElementById("Navbar").classList.add("dark-nav");
         document.getElementById("Content").style.color = "white";
         document.getElementById("toggle-switch").style.backgroundColor =
           "black";
         document.getElementById("toggle-switch").style.borderColor = "white";
-        document.getElementById("Navbar").classList.remove("bg-white");
         var elementAnchor = document.getElementsByClassName("dark-anchor");
         for (var i = 0; i < elementAnchor.length; i++) {
           elementAnchor[i].classList.toggle("dark-anchor-tag");
@@ -1134,13 +1136,13 @@
           elementCard2[i].classList.toggle("dark-card-2");
         }
       } else {
-        mode = "light";
-        document.getElementById("Navbar").classList.toggle("dark-nav");
+        localStorage.setItem("mode", "light");
+        document.getElementById("Navbar").classList.remove("dark-nav");
+        document.getElementById("Navbar").classList.add("bg-white");
         document.getElementById("Content").style.color = "#696969";
         document.getElementById("toggle-switch").style.backgroundColor =
           "white";
         document.getElementById("toggle-switch").style.borderColor = "black";
-        document.getElementById("Navbar").classList.add("bg-white");
         var elementAnchor = document.getElementsByClassName("dark-anchor");
         for (var i = 0; i < elementAnchor.length; i++) {
           elementAnchor[i].classList.toggle("dark-anchor-tag");
