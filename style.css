@@ -505,6 +505,9 @@ footer {
   position: relative;
   transform: scale(1.5);
 }
+.label:hover{
+  cursor: pointer;
+}
 
 .ball {
   width: 14px;
@@ -545,6 +548,7 @@ footer {
 }
 .dark-anchor-tag:hover {
   color: white;
+  cursor: pointer;
 }
 .dark-card {
   background-color: #121212;
@@ -665,4 +669,4 @@ footer {
 .footer-socials .icon span a {
     height: 50px;
     width: 50px;
-  }
+  }}
