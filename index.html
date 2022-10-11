@@ -37,6 +37,32 @@
     }
     gtag("js", new Date());
     gtag("config", "G-3EL4753RH2");
+    function setBlank_email(){
+      document.getElementById("email-form").setAttribute("placeholder", "");
+    }
+    function setBlank_name(){
+      document.getElementById("name-form").setAttribute("placeholder", "");
+    }
+    function setBlank_subject(){
+      document.getElementById("subject-form").setAttribute("placeholder", "");
+    }
+    function setBlank_message(){
+      document.getElementById("message-form").setAttribute("placeholder", "");
+    }
+
+    function set_email(){
+      document.getElementById("email-form").setAttribute("placeholder", "mail@example.com");
+    }
+    function set_name(){
+      document.getElementById("name-form").setAttribute("placeholder", "Your Name");
+    }
+    function set_subject(){
+      document.getElementById("subject-form").setAttribute("placeholder", "Subject");
+    }
+    function set_message(){
+      document.getElementById("message-form").setAttribute("placeholder", "Write Your Message Here");
+    }
+
   </script>
 
   <!--Google ads-->
@@ -945,9 +971,12 @@
           <form action="https://formspree.io/f/xbjbrgpv" method="POST">
             <input
               class="form-control"
+              id = "email-form"
               type="email"
               name="email"
               placeholder="mail@example.com"
+              onfocus="setBlank_email()"
+              onfocusout="set_email()"
               style="margin-top: 20px"
             />
 
@@ -955,7 +984,10 @@
               class="form-control"
               type="text"
               name="name"
+              id = "name-form"
               placeholder="Your Name"
+              onclick="setBlank_name()"
+              onfocusout="set_name()"
               style="margin-top: 20px"
               required
             />
@@ -963,6 +995,9 @@
             <input
               type="text"
               class="form-control"
+              id = "subject-form"
+              onclick="setBlank_subject()"
+              onfocusout="set_subject()"
               placeholder="Subject"
               required
             />
@@ -970,6 +1005,9 @@
               class="form-control"
               name="message"
               placeholder="Write Your message here"
+              id = "message-form"
+              onclick="setBlank_message()"
+              onfocusout="set_message()"
               style="margin-top: 20px"
             ></textarea>
             <div style="text-align: center">
