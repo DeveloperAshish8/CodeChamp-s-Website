@@ -27,12 +27,6 @@
     />
   </head>
 
-  <script
-    async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1210592339079044"
-    crossorigin="anonymous"
-  ></script>
-
   <!-- Google tag (gtag.js) -->
   <script
     async
@@ -121,6 +115,7 @@
                 >Contact Us</a
               >
             </li>
+            <!--dark mode starts-->
             <div class="form-check form-switch d-flex align-items-center mx-2">
               <input
                 type="checkbox"
@@ -146,7 +141,41 @@
     </nav>
     <!--navbar ends-->
 
+    <!--Internships cards starts-->
     <div class="container internships-cards">
+      <div class="card internships-card" style="width: 25rem" target="_blank">
+        <div class="card-body">
+          <h3 class="card-title" style="color: rgb(95, 95, 218)">
+            IT/Tech Intern
+          </h3>
+          <h5 class="company-name">Salesforce</h5>
+          <span class="type-container"
+            ><i class="bi bi-calendar2-week"></i
+            ><span class="type"> Internship</span></span
+          >
+          <span class="location-container"
+            ><i class="bi bi-geo"></i
+            ><span class="location"> Not disclosed</span></span
+          >
+
+          <h5 class="about">About</h5>
+          <p class="card-text content">
+            We believe in better, better, never best! And that applies to our
+            career site as well. This site is currently undergoing maintenance.
+            We appreciate your patience during this outage. In the meantime,
+            tell us about the opportunities you’re interested in. We’ll let you
+            know when this page is up and running again!
+          </p>
+          <div class="internship-btn">
+            <a
+              href="https://cloud.mail.salesforce.com/workday-downtime"
+              class="btn btn-primary rec-button common-button"
+              target="_blank"
+              >APPLY NOW</a
+            >
+          </div>
+        </div>
+      </div>
       <div class="card internships-card" style="width: 25rem" target="_blank">
         <div class="card-body">
           <h3 class="card-title" style="color: rgb(95, 95, 218)">
@@ -885,6 +914,7 @@
         </div>
       </div>
     </div>
+    <!--Internship card ends-->
 
     <br />
     <div class="discord-cta mt-6 text-center">
@@ -950,6 +980,7 @@
         </div>
       </div>
       <div class="contact">
+        <!--social media icons-->
         <div class="footer-socials">
           <div class="icon linkedin">
             <div class="tooltip">LinkedIn</div>
@@ -980,7 +1011,7 @@
             ></span>
           </div>
           <div class="icon email">
-            <div class="tooltip">email</div>
+            <div class="tooltip">Email</div>
             <span
               ><a
                 href="https://mail.google.com/mail/u/0/#inbox/QgrcJHsTmcCtxjSBkpNplcTVVpXWxXjbhFl?compose=DmwnWsdMVpKjLGgbrSgPKcKNNrktMnvgTRQNBSBlKTWkMkbGFkKmLtMZXXLqsQpQLfpDHclpldcG"
@@ -988,6 +1019,7 @@
             ></span>
           </div>
         </div>
+        <!--social media icon ends-->
       </div>
       <div class="copyright-content" style="color: white">
         <p>Copyright © 2022 <a href="#">CodeChamp</a> All Rights Reserved</p>
@@ -1001,6 +1033,7 @@
     ></script>
   </body>
   <script src="myScript.js"></script>
+  <!--JS for dark mode-->
   <script>
     let mode = "light";
     function darkModeToggler() {
