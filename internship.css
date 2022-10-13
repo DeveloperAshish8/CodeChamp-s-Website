@@ -195,7 +195,8 @@ i {
   transform: scale(1.05);
 }
 
-/** Card styling ends **/
+/* Card styling ends */
+/* discord button styling*/
 .discord-cta {
   padding: 20px;
 }

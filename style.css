@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:"Arial", sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 #toTopBtn {
@@ -596,8 +596,9 @@ footer {
   .about {
     max-width: 80%;
   }
+}
 /* Preloader styles start here */
-#preloader{
+#preloader {
   background: #fff;
   display: flex;
   align-items: center;
@@ -606,63 +607,62 @@ footer {
   height: 100vh;
   width: 100%;
   z-index: 100;
-
 }
-.preloader_text{
-  font-family: 'Poppins', sans-serif;
+.preloader_text {
+  font-family: "Poppins", sans-serif;
 
-    font-size: 88px;
+  font-size: 88px;
 
-    font-weight: 800;
+  font-weight: 800;
 
-    font-style: normal;
+  font-style: normal;
 
-    line-height: normal;
+  line-height: normal;
 
-    letter-spacing: normal;
+  letter-spacing: normal;
 
-    text-align: center;
+  text-align: center;
 
-    color: #505050;
+  color: #505050;
 }
-.preloader_text1::before{
+.preloader_text1::before {
   content: "CODE";
   color: #fc7014;
   margin-right: 10px;
   animation-name: appear;
   animation-duration: 4000ms;
   animation-delay: 300ms;
-  animation-timing-function:ease-in-out;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 @media (max-width: 788px) {
-  .preloader_text{
+  .preloader_text {
     font-size: 50px;
   }
 }
 @media (max-width: 526px) {
-  .preloader_text{
+  .preloader_text {
     font-size: 30px;
   }
 }
 @keyframes appear {
   0% {
     content: "CODE";
-}
+  }
 
-33% {
+  33% {
     content: "LEARN";
-}
+  }
 
-66% {
+  66% {
     content: "GROW";
-}
-100%{
-  content: "CODE";
-}
+  }
+  100% {
+    content: "CODE";
+  }
 }
 /* Preloader styles end here */
 .footer-socials .icon span a {
-    height: 50px;
-    width: 50px;
-  }
+  height: 50px;
+  width: 50px;
+}
