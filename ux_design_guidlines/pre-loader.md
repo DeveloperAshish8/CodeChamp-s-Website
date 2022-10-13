@@ -4,7 +4,6 @@
 ![Pre-loader Reference](https://i.imgur.com/Ag4WYAw.png)
 ![Pre-loader Reference](https://i.imgur.com/EyKM0UF.png)
 
-
 ## CSS Guideline
 
     .preloader_text {
@@ -36,7 +35,7 @@
 
 ## Animation Guideline
 
-> Animation Lenght: 800ms
+> Animation Length: 800ms
 >
 > Animation Delay: 300ms
 >

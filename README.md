@@ -7,6 +7,7 @@
 This is an Open Source Community Website which contain details on past events, social media handles, team details, and an internship page where various internships are listed. The website also has a section dedicated for frequently asked questions and a footer which contains quick links for navigation.
 
 ## 📍Tech Stacks
+
 <div align="start">
    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
