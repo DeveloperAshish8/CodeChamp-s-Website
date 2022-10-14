@@ -16,8 +16,8 @@ This is an Open Source Community Website which contain details on past events, s
 	
 ## 📍Acknowledgements
 
-- [📌Visit our website](https://codechamp.tech/)
-- [📌For any issue join our discord](https://discord.com/invite/Pp5xg74nKH)
+- <a href="https://codechamp.tech/" target="_blank">📌Visit our website</a>
+- <a href="https://discord.com/invite/Pp5xg74nKH" target="_blank">📌For any issue join our discord</a>
 
 ## 📍Contributing
 
