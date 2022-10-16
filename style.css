@@ -69,12 +69,12 @@
 }
 
 .hamburger {
-  border-color: #fd7014;
+  border-color:#fd7014;
 }
 
 .hamburger:hover {
   border: none;
-  background-color: #fd711494;
+  background-color: #fd711494 !important;
   transition: all 0.2s ease-in-out;
 }
 
