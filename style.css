@@ -55,6 +55,19 @@
   );
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #d3d3d3;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fc7014;
+  border-radius: 10px;
+}
+
 /** navbar styling starts**/
 .logo {
   margin-left: 12vw;
