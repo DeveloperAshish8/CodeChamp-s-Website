@@ -354,7 +354,7 @@
             style="width: 18rem"
             target="_blank"
           >
-            <i class="bi bi-github joinus-icons" style="color: black"></i>
+            <i class="bi bi-github joinus-icons" id="github" style="color: black"></i>
             <div class="card-body home-card">
               <h3 class="card-title text-center">Github</h3>
               <p class="card-text content">
@@ -1150,6 +1150,7 @@
     function darkModeToggler() {
       if (mode === "light") {
         mode = "dark";
+        document.getElementById('github').style.color = "white"
         document.getElementById("Navbar").classList.toggle("dark-nav");
         document.getElementById("Content").style.color = "white";
         document.getElementById("toggle-switch").style.backgroundColor =
@@ -1170,6 +1171,7 @@
         }
       } else {
         mode = "light";
+        document.getElementById('github').style.color = "black"
         document.getElementById("Navbar").classList.toggle("dark-nav");
         document.getElementById("Content").style.color = "#696969";
         document.getElementById("toggle-switch").style.backgroundColor =
