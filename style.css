@@ -55,6 +55,19 @@
   );
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #d3d3d3;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fc7014;
+  border-radius: 10px;
+}
+
 /** navbar styling starts**/
 .logo {
   margin-left: 12vw;
@@ -69,12 +82,12 @@
 }
 
 .hamburger {
-  border-color: #fd7014;
+  background-color: white;
+  border-color: #fc7014;
 }
 
 .hamburger:hover {
   border: none;
-  background-color: #fd711494;
   transition: all 0.2s ease-in-out;
 }
 
@@ -294,6 +307,9 @@ hr {
 
 .faq:hover {
   box-shadow: 0 0px 3px rgb(250, 135, 4);
+}
+.accredition-button-sm {
+  color: #696969;
 }
 
 form {
@@ -537,6 +553,7 @@ footer {
   background-color: black;
   color: white;
 }
+
 .dark-nav {
   background-color: black;
 }
