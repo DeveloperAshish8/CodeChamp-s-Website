@@ -4,7 +4,7 @@
 
 <h1 align="center"> CodeChamp-Website </h1>
 
-This is an Open Source Community Website which contain details on past events, social media handles, team details, and an internship page where various internships are listed. The website also has a section dedicated for frequently asked questions and a footer which contains quick links for navigation.
+This is an open source community website which contains details on past events, social media handles, team details, and an internship page. where various internships are listed. The website also has a section dedicated for frequently asked questions and a footer, which contains quick links for navigation.
 
 ## 📍Tech Stacks
 <div align="start">
@@ -40,7 +40,7 @@ If you are interested in reporting/fixing issues and contributing directly to th
 
 ## 📍CONTACTS
 
-Please visit Admins Git-hub profile for contact details.
+Please visit the admin's GitHub profile for contact details.
 
 <h2 align=center> OUR VALUABLE CONTRIBUTORS✨ </h2>
 <p align="center">
