@@ -562,7 +562,7 @@ footer {
 }
 
 .dark-nav {
-  background-color: black;
+  background-color: black !important ;
 }
 
 .dark-anchor-tag {
