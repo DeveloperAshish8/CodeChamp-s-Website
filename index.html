@@ -1191,11 +1191,20 @@
   </body>
   <!--JS for dark mode integration-->
   <script>
-    let mode = "light";
+    mode = localStorage.getItem("CODECHAMP");
+    if(mode == null){
+      localStorage.setItem("CODECHAMP", "light");
+    }
+    if(mode === "dark"){
+      mode = "light";
+      darkModeToggler();
+    }
     function darkModeToggler() {
       if (mode === "light") {
         mode = "dark";
-        document.getElementById("github").style.color = "white";
+        localStorage.setItem("CODECHAMP", "dark");
+        document.getElementById('github').style.color = "white"
+
         document.getElementById("Navbar").classList.toggle("dark-nav");
         document.getElementById("Content").style.color = "white";
         document.getElementById("toggle-switch").style.backgroundColor =
@@ -1216,7 +1225,9 @@
         }
       } else {
         mode = "light";
-        document.getElementById("github").style.color = "black";
+        localStorage.setItem("CODECHAMP", "light");
+        document.getElementById('github').style.color = "black"
+
         document.getElementById("Navbar").classList.toggle("dark-nav");
         document.getElementById("Content").style.color = "#696969";
         document.getElementById("toggle-switch").style.backgroundColor =

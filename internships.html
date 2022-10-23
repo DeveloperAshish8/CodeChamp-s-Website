@@ -141,6 +141,7 @@
     </nav>
     <!--navbar ends-->
 
+    <h1><center> INTERNSHIPS/JOBS </center></h1>
     <!--Internships cards starts-->
     <div class="container internships-cards">
       <div class="card internships-card" style="width: 25rem" target="_blank">
@@ -1104,10 +1105,18 @@
   <script src="myScript.js"></script>
   <!--JS for dark mode-->
   <script>
-    let mode = "light";
+    let mode = localStorage.getItem("CODECHAMP");
+    if(mode == null){
+      localStorage.setItem("CODECHAMP", "light");
+    }
+    if(mode === "dark"){
+      mode = "light";
+      darkModeToggler();
+    }
     function darkModeToggler() {
       if (mode === "light") {
         mode = "dark";
+        localStorage.setItem("CODECHAMP", "dark");
         document.getElementById("Navbar").classList.toggle("dark-nav");
         document.getElementById("toggle-switch").style.backgroundColor =
           "black";
@@ -1127,6 +1136,7 @@
         }
       } else {
         mode = "light";
+        localStorage.setItem("CODECHAMP", "light");
         document.getElementById("Navbar").classList.toggle("dark-nav");
         document.getElementById("toggle-switch").style.backgroundColor =
           "white";
