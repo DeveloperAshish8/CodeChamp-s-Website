@@ -4,7 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
+  /* font-family: "Arial", sans-serif; */
+}
+
+h1{
+   padding-top: 30px; 
+  font-family: "Oswald", sans-serif;
 }
 
 #toTopBtn {
