@@ -830,33 +830,41 @@
       <br />
       <div class="feedbacks">
         <div class="partner-logo">
-          <img
-            src="./images/Bepractical logo.webp"
-            alt="Bepractical"
-            width="200px"
-            height="80px"
-            style="margin-top: 40px"
-          />
+          <a href="https://bepractical.tech/">
+            <img
+              src="./images/Bepractical logo.webp"
+              alt="Bepractical"
+              width="200px"
+              height="80px"
+              style="margin-top: 40px"
+            />
+          </a>
         </div>
 
         <div class="partner-logo">
-          <img
-            src="./images/Coding Blocks.png"
-            alt="Coding Blocks"
-            width="250px"
-            height="100px"
-            style="margin-top: 40px"
-          />
+          <a href="https://codingblocks.com/">
+            <img
+              src="./images/Coding Blocks.png"
+              alt="Coding Blocks"
+              width="250px"
+              height="100px"
+              style="margin-top: 40px"
+            />
+          </a>
         </div>
 
         <div class="partner-logo">
-          <img
-            src="./images/GDSC Gaya College of Engineering vertical color (3).png"
-            alt="Coding Blocks"
-            width="250px"
-            height="150px"
-            style="margin-top: 25px"
-          />
+          <a
+            href="https://gdsc.community.dev/gaya-college-of-engineering-gaya/"
+          >
+            <img
+              src="./images/GDSC Gaya College of Engineering vertical color (3).png"
+              alt="Coding Blocks"
+              width="250px"
+              height="150px"
+              style="margin-top: 25px"
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -1169,8 +1177,7 @@
           <div class="icon email">
             <div class="tooltip">Email</div>
             <span
-              ><a
-                href="https://mail.google.com/mail/u/0/#inbox/QgrcJHsTmcCtxjSBkpNplcTVVpXWxXjbhFl?compose=DmwnWsdMVpKjLGgbrSgPKcKNNrktMnvgTRQNBSBlKTWkMkbGFkKmLtMZXXLqsQpQLfpDHclpldcG"
+              ><a href="mailto: codechampcommunity@gmail.com"
                 ><i class="bi bi-envelope-fill"></i></a
             ></span>
           </div>
@@ -1193,10 +1200,10 @@
   <!--JS for dark mode integration-->
   <script>
     mode = localStorage.getItem("CODECHAMP");
-    if(mode == null){
+    if (mode == null) {
       localStorage.setItem("CODECHAMP", "light");
     }
-    if(mode === "dark"){
+    if (mode === "dark") {
       mode = "light";
       darkModeToggler();
     }
@@ -1204,7 +1211,7 @@
       if (mode === "light") {
         mode = "dark";
         localStorage.setItem("CODECHAMP", "dark");
-        document.getElementById('github').style.color = "white"
+        document.getElementById("github").style.color = "white";
 
         document.getElementById("Navbar").classList.toggle("dark-nav");
         document.getElementById("Content").style.color = "white";
@@ -1227,7 +1234,7 @@
       } else {
         mode = "light";
         localStorage.setItem("CODECHAMP", "light");
-        document.getElementById('github').style.color = "black"
+        document.getElementById("github").style.color = "black";
 
         document.getElementById("Navbar").classList.toggle("dark-nav");
         document.getElementById("Content").style.color = "#696969";
