@@ -107,6 +107,9 @@ h1{
   transition: box-shadow .1s ease-in-out;  
   box-shadow: 0 2px #fd7014;
 }
+.container-fluid{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
 /**navbar styling ends**/
 
 /**first container area styling starts**/
