@@ -141,9 +141,79 @@
     </nav>
     <!--navbar ends-->
 
-    <h1><center> INTERNSHIPS/JOBS </center></h1>
+    <h1><center>INTERNSHIPS/JOBS</center></h1>
     <!--Internships cards starts-->
     <div class="container internships-cards">
+      <div class="card internships-card" style="width: 25rem" target="_blank">
+        <div class="card-body">
+          <h3 class="card-title" style="color: rgb(95, 95, 218)">
+            Backend Developer
+          </h3>
+          <h5 class="company-name">Acowale</h5>
+          <span class="type-container"
+            ><i class="bi bi-calendar2-week"></i
+            ><span class="type"> Internship</span></span
+          >
+          <span class="location-container"
+            ><i class="bi bi-geo"></i
+            ><span class="location"> Remote</span></span
+          >
+
+          <h5 class="about">About</h5>
+          <p class="card-text content">
+            Anyone who want to develop their coding skills with relevant
+            prerequisite skills and interests. Their goal is to provide you with
+            practical knowledge and exposure while you are still at college.
+            They actively offer full-time offer letters to our best Interns when
+            they pass out from their college. If you are not a college-goer, you
+            can still apply as Acowale hiring process focus only on skills.
+          </p>
+          <div class="internship-btn">
+            <a
+              href="https://www.linkedin.com/jobs/collections/recommended/?currentJobId=3328923057"
+              class="btn btn-primary rec-button common-button"
+              target="_blank"
+              >APPLY NOW</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="card internships-card" style="width: 25rem" target="_blank">
+        <div class="card-body">
+          <h3 class="card-title" style="color: rgb(95, 95, 218)">
+            Python Developer
+          </h3>
+          <h5 class="company-name">Brainnest</h5>
+          <span class="type-container"
+            ><i class="bi bi-calendar2-week"></i
+            ><span class="type"> Internship</span></span
+          >
+          <span class="location-container"
+            ><i class="bi bi-geo"></i
+            ><span class="location"> Remote</span></span
+          >
+
+          <h5 class="about">About</h5>
+          <p class="card-text content">
+            Working on a variety of software tasks and projects Researching new
+            technologies and incorporating them into new systems and products
+            Taking the initiative in leading projects and collaborating with
+            others Testing, integrating, writing, troubleshooting, and debugging
+            software Responsibility for the architecture and implementation of
+            critical software components Working to improve the performance and
+            functionality of current systems and products.
+          </p>
+          <div class="internship-btn">
+            <a
+              href="https://www.linkedin.com/jobs/collections/recommended/?currentJobId=3324936622"
+              class="btn btn-primary rec-button common-button"
+              target="_blank"
+              >APPLY NOW</a
+            >
+          </div>
+        </div>
+      </div>
       <div class="card internships-card" style="width: 25rem" target="_blank">
         <div class="card-body">
           <h3 class="card-title" style="color: rgb(95, 95, 218)">
@@ -1106,10 +1176,10 @@
   <!--JS for dark mode-->
   <script>
     let mode = localStorage.getItem("CODECHAMP");
-    if(mode == null){
+    if (mode == null) {
       localStorage.setItem("CODECHAMP", "light");
     }
-    if(mode === "dark"){
+    if (mode === "dark") {
       mode = "light";
       darkModeToggler();
     }
