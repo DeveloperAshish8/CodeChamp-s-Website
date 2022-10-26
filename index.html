@@ -92,10 +92,6 @@
   ></script>
 
   <body>
-    <!--button to top-->
-    <div id="progress">
-    <span id="progress-value">&#x1F815;</span>
-  </div>
     <!--preloader starts-->
     <div id="preloader">
       <p class="preloader_text preloader_text1"></p>
@@ -1090,7 +1086,12 @@
     <!--Contact us ends-->
     <br />
     <!--Buton to the top-->
-    
+    <a
+      href="#"
+      id="toTopBtn"
+      class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+      data-abc="true"
+    ></a>
     <footer>
       <div
         class="text-center"
@@ -1214,25 +1215,6 @@
   </body>
   <!--JS for dark mode integration-->
   <script>
-    let calcScrollValue = () => {
-    let scrollProgress = document.getElementById("progress");
-    let progressValue = document.getElementById("progress-value");
-    let pos = document.documentElement.scrollTop;
-    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    let scrollValue = Math.round((pos * 100) / calcHeight);
-
-    if (pos > 100) {
-      scrollProgress.style.display = "grid";
-    }
-    else {
-      scrollProgress.style.display = "none";
-    }
-    scrollProgress.addEventListener("click", () => {
-      document.documentElement.scrollTop = 0;
-    })
-    scrollProgress.style.background = `conic-gradient(#fc7014 ${scrollValue}%, #000 ${scrollValue}%)`;
-    // console.log(scrollValue);
-  }
     mode = localStorage.getItem("CODECHAMP");
     if (mode == null) {
       localStorage.setItem("CODECHAMP", "light");
