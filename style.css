@@ -6,7 +6,10 @@
   box-sizing: border-box;
   /* font-family: "Arial", sans-serif; */
 }
-
+#progress {
+  background: #fc7014;
+  color: black;
+  /* background: #d7d7d7; */
   position: fixed;
   bottom: 20px;
   right: 10%;
