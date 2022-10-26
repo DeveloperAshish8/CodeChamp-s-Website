@@ -313,12 +313,13 @@ form {
 }
 
 .form-container {
-  width: 600px;
+  width: 500px;
   height: auto;
   padding: 10px;
   background-image: url(./images/mail\ gif.gif);
   background-size: cover;
   border-radius: 15px;
+  margin: auto;
 }
 
 .form-container>form>input {
@@ -327,6 +328,7 @@ form {
 
 .contact-us-image {
   max-width: 45%;
+  margin: auto;
 }
 
 footer {
