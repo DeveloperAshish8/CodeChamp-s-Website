@@ -6,6 +6,35 @@
   box-sizing: border-box;
   /* font-family: "Arial", sans-serif; */
 }
+#progress {
+  background: #fc7014;
+  color: black;
+  /* background: #d7d7d7; */
+  position: fixed;
+  bottom: 20px;
+  right: 10%;
+  height: 70px;
+  width: 70px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 40;
+}
+
+#progress-value {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 35px;
+  height: calc(100% - 15%);
+  width: calc(100% - 15%);
+  background: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 h1{
    padding-top: 30px; 
