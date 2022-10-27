@@ -120,7 +120,7 @@ h1{
   flex-direction: row;
   flex-wrap: wrap;
 }
-.glass{
+.glass{ 
   padding: 2rem;
   /* display: flex; */
   background: #fff;
@@ -743,7 +743,7 @@ footer {
 }
  /* Tablet Devices Media Queries */
 @media screen and (max-width: 768px) {
-  .container {
+  .container { 
     display: flex;
     margin-top: 10vh;
     justify-content: space-around;
@@ -807,3 +807,10 @@ p {
 
 }
 
+
+@media(min-width:992px){
+  .empty-div{
+    height:70px;
+  }
+  
+}
