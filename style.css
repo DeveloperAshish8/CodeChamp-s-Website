@@ -708,3 +708,10 @@ footer {
   height: 50px;
   width: 50px;
 }
+
+@media(min-width:992px){
+  .empty-div{
+    height:70px;
+  }
+  
+}
