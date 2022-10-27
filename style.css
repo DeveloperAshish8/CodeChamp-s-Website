@@ -115,14 +115,47 @@ h1{
 /**first container area styling starts**/
 .container {
   display: flex;
-  margin-top: 5vh;
+  margin-top: 10vh;
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
 }
+.glass{
+  padding: 2rem;
+  /* display: flex; */
+  background: #fff;
+  /* min-height: 80vh; */
+  /* width: 60%; */
+  background: linear-gradient(to right bottom, rgba(171, 171, 171, .7), rgba(171, 171, 171, .3));
+  border-radius: 2rem;
+  backdrop-filter: blur(2rem);
+  z-index: 2;
+}
+.circle1, .circle2 {
+  background: #fff;
+  background: linear-gradient(to right bottom, rgba(233, 110, 40, .8), rgba(233, 110, 40, .3));
+  height: 21vw;
+  width: 21vw;
+  position: absolute; 
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 17%;
+  right: 12%;
+}
+.circle2 {
+  bottom: 13%;
+  left: 11%;
+}
 
 .discription {
-  width: 600px;
+  width: 55vw; 
+}
+
+.discription .content{
+  margin: 0;
+  
 }
 
 .heading {
@@ -708,3 +741,69 @@ footer {
   height: 50px;
   width: 50px;
 }
+ /* Tablet Devices Media Queries */
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    margin-top: 10vh;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  .circle1 {
+    top: 16%;
+    right: 12%;
+  }
+  .circle2 {
+    bottom: 1%;
+    left: 10%;
+}
+
+p {
+ margin: 0;
+}
+}
+
+/* Mobile Devices Media Queries */
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin-top: 1vh;
+}
+.glass {
+  padding: 1rem 1rem .5rem 1rem;
+  width: 80%;
+}
+  .discription {
+    width: 100%;
+
+}
+.circle1 {
+  top: 18%;
+  right: 5%;
+}
+.circle2 {
+  bottom: 13%;
+  left: 6%;
+}
+.common-button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #fd7014;
+  color: white;
+  border: none;
+  transition: all 0.3s linear;
+  margin: .5rem;
+}
+#toTopBtn {
+  position: fixed;
+  bottom: 26px;
+  right: 7px;
+  z-index: 98;
+  padding: 21px;
+  background-color: #2666cf;
+  border-radius: 25%;
+}
+
+}
+
