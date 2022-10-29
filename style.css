@@ -718,3 +718,17 @@ footer {
     height: 70px;
   }
 }
+
+
+/* makes the navbar in 992-1200px screen width responsive with no overflow of child elements*/
+@media (min-width: 992px) and (max-width:1200px) {
+  .nav-ul > li > a {
+    margin-left: 0px;
+  }
+  .nav-link > a {
+    margin: 0;
+  }
+  .logo{
+    margin-left:8%;
+  }
+}
