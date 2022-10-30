@@ -154,9 +154,11 @@ h1 {
   transition: all 0.3s linear;
 }
 
-.common-button:hover {
-  background-color: transparent !important;
-  color: #fd7014 !important;
+.common-button:hover,
+.common-button:focus {
+  background-color: transparent;
+  color: #fd7014;
+  border: .15rem solid #fd7014;
   box-shadow: 0 0.5px 1px rgb(92, 92, 92) !important;
 }
 
