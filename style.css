@@ -74,14 +74,14 @@ h1 {
 }
 
 /** navbar styling starts**/
-.nav-container{
-  padding:0 50px;
+.nav-container {
+  padding: 0 50px;
   position: relative;
 }
 
 .nav-ul {
   width: 70%;
-  margin:0 auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -134,7 +134,7 @@ h1 {
 
 .content {
   font-family: "Fira Sans", sans-serif;
-/*   color: #696969; */
+  color: #696969;
   line-height: 25px;
 
   display: -webkit-box;
@@ -634,8 +634,8 @@ footer {
     max-width: 80%;
   }
 
-  .logo{
-    margin-left:0;
+  .logo {
+    margin-left: 0;
   }
 }
 
@@ -722,37 +722,36 @@ footer {
   }
 }
 
-
 /* make the navbar responsive below 1200px screen sizes*/
 
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
   .nav-ul {
     width: 85%;
   }
 }
 
-@media (max-width:990px) {
+@media (max-width: 990px) {
   .nav-ul {
     margin: 0;
-    padding:0 20px;
+    padding: 0 20px;
   }
   .nav-container {
-    padding:0 15px 15px 15px;
+    padding: 0 15px 15px 15px;
   }
-  .form-check{
-    margin-left:-0.4rem !important ;
+  .form-check {
+    margin-left: -0.4rem !important ;
   }
 }
 
-@media (max-width:630px) {
+@media (max-width: 630px) {
   .nav-container {
-    padding:0 10px 15px 10px;
+    padding: 0 10px 15px 10px;
   }
   .nav-ul {
     margin: 0;
-    padding:0 15px;
+    padding: 0 15px;
   }
-  .form-check{
-    margin-left:-0.7rem !important ;
+  .form-check {
+    margin-left: -0.7rem !important ;
   }
 }
