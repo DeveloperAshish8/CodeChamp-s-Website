@@ -134,7 +134,7 @@ h1 {
 
 .content {
   font-family: "Fira Sans", sans-serif;
-  color: #696969;
+/*   color: #696969; */
   line-height: 25px;
 
   display: -webkit-box;
