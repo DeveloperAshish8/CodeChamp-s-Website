@@ -136,7 +136,6 @@ h1 {
   font-family: "Fira Sans", sans-serif;
   color: #696969;
   line-height: 25px;
-
   display: -webkit-box;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
