@@ -88,11 +88,10 @@ h1 {
 
 .hamburger {
   background-color: white;
-  border-color: #fc7014;
+  border: none;
 }
 
 .hamburger:hover {
-  border: none;
   transition: all 0.2s ease-in-out;
 }
 
