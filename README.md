@@ -46,7 +46,7 @@ Please visit Admins Git-hub profile for contact details.
 <p align="center">
   
 	
-<a href="https://github.com/SauravMukherjee44/CodeChamp-s-Website/graphs/contributors">
+<a href="https://github.com/CodeChamp-s-Website/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=DeveloperAshish8/CodeChamp-s-Website" />
 </a>
 
