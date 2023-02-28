@@ -25,13 +25,7 @@ Contributions are always welcome😃 !
 
 If you are interested in reporting/fixing issues and contributing directly to the code base, please see [CONTRIBUTING.md](./CONTRIBUTING.md) for more information on what we're looking for and how to get started.
 
-## 📍Screenshots
 
-<img src="./images/Home page.png" alt="Sublime's custom image" />
-
-<img src="./images/opportunities page.png" alt="Sublime's custom image" />
-
-<img src="./images/Contact us page.png" alt="Sublime's custom image"/>
 
 <h1 align="center"> PROJECT MAINTAINER 😇</h1>
 <p align="center">
